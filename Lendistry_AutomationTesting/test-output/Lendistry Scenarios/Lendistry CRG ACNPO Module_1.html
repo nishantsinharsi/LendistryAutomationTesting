@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>TestNG:  Lendistry CRG ACNPO Module_1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Lendistry CRG ACNPO Module_1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 13 17:16:11 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1558 seconds (1558766 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRGAcNonProfit.TC006_ACNPO_SF_ODSSVerification.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC006_ACNPO_SF_ODSSVerification<br>Parameters: {Women owned=Yes, UW Stage=UW, SC_CDFI=0, Business_Zip=10459, Business_Address=1301 Louis Nine Blvd, SC_Metro/NonMetro=0, Runmode=Y, Business_City=Bronx, SC_WomenOwned=0.25, UW Username=uwteamlead@yopmail.com, State=New York, Mode=ACNPO, Country=Bronx County, Browser=Chrome, Business_Address2=1301 Louis Nine Blvd, UW Password=test@123}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGAcNonProfit.TC006_ACNPO_SF_ODSSVerification.testB(TC006_ACNPO_SF_ODSSVerification.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@formcontrolname=&apos;currentOpportunityStage&apos;]//span&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43d41f4234edd61af60b3a97c5f2199f
+*** Element info: {Using=xpath, value=//*[@formcontrolname=&apos;currentOpportunityStage&apos;]//span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace244079168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace244079168'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGAcNonProfit.TC006_ACNPO_SF_ODSSVerification.testB(TC006_ACNPO_SF_ODSSVerification.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@formcontrolname=&apos;currentOpportunityStage&apos;]//span&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43d41f4234edd61af60b3a97c5f2199f
+*** Element info: {Using=xpath, value=//*[@formcontrolname=&apos;currentOpportunityStage&apos;]//span}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+</pre></div></td>
+<td>192</td>
+<td>CRGAcNonProfit.TC006_ACNPO_SF_ODSSVerification@6cc4cdb9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRGAcNonProfit.TC007_ACNPO_CRG_LinkToBank.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC007_ACNPO_CRG_LinkToBank<br>Parameters: {Bank name=RBL bank, DPassword=Nishant@123#, Zip=12345, BusinessName=Lendistry, Phone OTP=1234, Runmode=Y, Test Document=testfile.txt, Owner_City=Anthill, Bank username=user_good, Routing Number=123456789, Owner_Address=220, Locust Ave, State=Missouri, Mode=ACNPO, Browser=Chrome, Bank password=pass_good, Account Number=1234567890}</td>
+<td></td>
+<td>269</td>
+<td>CRGAcNonProfit.TC007_ACNPO_CRG_LinkToBank@28194a50</td></tr>
+<tr>
+<td title='CRGAcNonProfit.TC008_ACNPO_UW_BankStmtSummary.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC008_ACNPO_UW_BankStmtSummary<br>Parameters: {ApproveIndex=#385806, Bank name=RBL bank, Zip=12345, BusinessName=Lendistry, Runmode=Y, Owner_City=Anthill, UW Username=uwteamlead@yopmail.com, Routing Number=123456789, Owner_Address=220, Locust Ave, State=Missouri, Mode=ACNPO, Browser=Chrome, UW Password=test@123, Account Number=1234567890}</td>
+<td></td>
+<td>97</td>
+<td>CRGAcNonProfit.TC008_ACNPO_UW_BankStmtSummary@7f2cfe3f</td></tr>
+<tr>
+<td title='CRGAcNonProfit.TC002_ACNPO_SF_LeadVerification.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC002_ACNPO_SF_LeadVerification<br>Parameters: {Q5=836227, UserName=sfdevops@lendistry.com.UAT, Q4=353802, Q3=Yes, Owner_City=Anthill, Q2=Yes, Q1=Yes, Race=White, Mode=ACNPO, Tenant URL=cameo-stage.mylendistry.com, Disabled=No, CR Status=Completed, Ethnicity=Not Disclosed, Bussiness It=Textile, Password=Lendistry2021, NAICS=226668, Annual revenue=2500879, MobileNo=700-455-7089, BusinessName=Lendistry, Name=Marisol L Test case, Grant Type=Payroll, Full time employess=20976, Owner_Address=220, Locust Ave, Zip Code=65488, SSN/EIN=000000001, Portal App Status=Finished, Portal URL=https://stage.mylendistry.com/#/login, Organization service=Childcare, Part time employee=34536, Owner_Address2=220, Locust Ave, Job created=40715, Q6.2=SBA PPP, Q6.1=788878, Yes=Yes, Lead Record Type=GRANT, ownerPercentage=10, Rural=Yes, Franchise=Yes, Bussiness Type=Textile, Website=none.com, Runmode=Y, Country=Adair County, Customer Base=B2B, BussinessType=Non Profit, Date=12/23/1992, Bussiness Do=Manufacturer, Tell us more=Knitting Mill, Jobs retained=203, Request amount=25000, Non profit status=501(c)(3), Women owned=No, Veteran owned=Yes, Browser=Chrome, Q6=Yes}</td>
+<td></td>
+<td>109</td>
+<td>CRGAcNonProfit.TC002_ACNPO_SF_LeadVerification@3e2055d6</td></tr>
+<tr>
+<td title='CRGAcNonProfit.TC003_ACNPO_SF_EditLead.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC003_ACNPO_SF_EditLead<br>Parameters: {Business Phone No=772-588-2769, BusinessName=Lendistry sales, Runmode=Y, Q6=NO, UW Username=uwteamlead@yopmail.com, Veteran owned=No, ownerPercentage=20, Race=Asian, Mode=ACNPO, Browser=Chrome, UW Password=test@123}</td>
+<td></td>
+<td>118</td>
+<td>CRGAcNonProfit.TC003_ACNPO_SF_EditLead@50029372</td></tr>
+<tr>
+<td title='CRGAcNonProfit.TC004_ACNPO_SF_convertLeadToOpp.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC004_ACNPO_SF_convertLeadToOpp<br>Parameters: {Q5=836227, Q4=353802, Q3=Yes, Owner_City=Anthill, Q2=Yes, Q1=Yes, Race=Asian, Mode=ACNPO, Tenant URL=cameo-stage.mylendistry.com, Disabled=No, Ethnicity=Not Disclosed, Bussiness It=Textile, NAICS=226668, Annual revenue=2500879, MobileNo=700-455-7089, BusinessName=Lendistry sales, Name=Marisol L Test case, Grant Type=Payroll, Full time employess=20976, Owner_Address=220, Locust Ave, Zip Code=65488, SSN/EIN=000000001, Portal App Status=Finished, Portal URL=https://stage.mylendistry.com/#/login, Organization service=Childcare, Part time employee=34536, Owner_Address2=220, Locust Ave, Job created=40715, Business Phone No=772-588-2769, Yes=Yes, Lead Record Type=GRANT, ownerPercentage=20, Rural=Yes, Franchise=Yes, Bussiness Type=Textile, Website=none.com, Runmode=Y, Country=Adair County, Customer Base=B2B, BussinessType=Non Profit, Date=12/23/1992, Bussiness Do=Manufacturer, Tell us more=Knitting Mill, Jobs retained=203, Request amount=25000, Non profit status=501(c)(3), Women owned=No, UW Password=test@123, UW Username=uwteamlead@yopmail.com, Veteran owned=No, Browser=Chrome, Q6=No}</td>
+<td></td>
+<td>124</td>
+<td>CRGAcNonProfit.TC004_ACNPO_SF_convertLeadToOpp@e3b3b2f</td></tr>
+<tr>
+<td title='CRGAcNonProfit.TC001_ACNPO_CRG_NonProfit.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC001_ACNPO_CRG_NonProfit<br>Parameters: {Q5=836227, Q4=353802, Q3=Yes, Owner_City=Anthill, Q2=Yes, Q1=Yes, Race=White, Mode=ACNPO, FirstName=Marisol L, Status=COMPLETED FILE, Disabled=No, Ethnicity=Not Disclosed, Bussiness It=Textile, Password=Nishant@123#, Annual revenue=2500879, NAICS=226668, MobileNo=700-455-7089, BusinessName=Lendistry, Grant Type=Payroll, Email=test2910212157@yopmail.com, Full time employess=20976, Owner_Address=220, Locust Ave, Zip Code=65488, Sumit application=Yes, EIN=000000001, Organization service=Childcare, Part time employee=34536, Owner_Address2=220, Locust Ave, Job created=40715, Q6.2=788878, Q6.1=SBA PPP, SSN=000000001, Yes=Yes, ownerPercentage=10.0, Rural=Yes, Franchise=Yes, Website=none.com, Runmode=Y, Country=Adair County, BussinessType=Non Profit, State=Missouri, Date=12/23/1992, Bussiness Do=Manufacturer, Jobs retained=203, Tell us more=Knitting Mill, Request amount=25000, Non profit status=501(c)(3), Women owned=No, LastName=Test case, Veteran owned=Yes, Browser=Chrome, Q6=Yes}</td>
+<td></td>
+<td>283</td>
+<td>CRGAcNonProfit.TC001_ACNPO_CRG_NonProfit@18f8cd79</td></tr>
+<tr>
+<td title='CRGAcNonProfit.TC005_ACNPO_SF_EditUWToOpps.testB()'><b>testB</b><br>Test class: CRGAcNonProfit.TC005_ACNPO_SF_EditUWToOpps<br>Parameters: {Job created=407, Runmode=Y, UW Username=uwteamlead@yopmail.com, Q3=No, Full time employess=209, ownerPercentage=30, UpdateSalesforceStatus=Processing Sub, Website=Nishant.com, Part time employee=345, Jobs retained=20, Mode=ACNPO, Browser=Chrome, UW Password=test@123}</td>
+<td></td>
+<td>360</td>
+<td>CRGAcNonProfit.TC005_ACNPO_SF_EditUWToOpps@50f6ac94</td></tr>
+</table><p>
+</body>
+</html>

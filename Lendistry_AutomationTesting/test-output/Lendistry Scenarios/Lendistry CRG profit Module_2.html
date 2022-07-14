@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>TestNG:  Lendistry CRG profit Module_2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Lendistry CRG profit Module_2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 14 10:52:05 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1448 seconds (1448263 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRGForProfit.TC013_SF_ConvertExistingLead.testB()'><b>testB</b><br>Test class: CRGForProfit.TC013_SF_ConvertExistingLead<br>Parameters: {MiddleName=Test, Existing Lead=Lendistry Sales, Company=Lendistry, Runmode=Y, Unqualified Reason=Unresponsive, Phone=700-455-7089, Lead status=Unqualified, InCorrectPhone=7004557089, Salutation=Mr., LastName=case, FirstName=Marisol L, Mode=ForProfits, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGForProfit.TC013_SF_ConvertExistingLead.testB(TC013_SF_ConvertExistingLead.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2c4d758fc6a292f359a2222db4b359d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.Automation.Keywords.GenericKeywords.reload(GenericKeywords.java:468)
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace779315954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace779315954'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGForProfit.TC013_SF_ConvertExistingLead.testB(TC013_SF_ConvertExistingLead.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2c4d758fc6a292f359a2222db4b359d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.Automation.Keywords.GenericKeywords.reload(GenericKeywords.java:468)
+	... 27 more
+</pre></div></td>
+<td>98</td>
+<td>CRGForProfit.TC013_SF_ConvertExistingLead@1e16c0aa</td></tr>
+<tr>
+<td title='CRGForProfit.TC010_CRG_NetworkSelection.testB()'><b>testB</b><br>Test class: CRGForProfit.TC010_CRG_NetworkSelection<br>Parameters: {Browser=Chrome, Application Status=Incomplete, Network Selection=Approved, CRG Inactive=CRG Inactive, NYC Hold=NYC Hold, DPassword=Nishant@123#, SN CRG Approve=CRG Approved, SN Waitlist=CRG Waitlist, CRG NPO Hold=CRG NPO Hold, Select Network ALC=Approved - Lackawanna County, SN Not Selected=Not Selected, Runmode=Y, CRG AC NPO Hold=CRG AC NPO Hold, Sumit application=Yes, SN PA Cares=Waitlist- PA Cares, Inactive Status=Inactive, Select Network HFNR=Hold for next round, SN NPO Inactive=CRG NPO Inactive, SN CRG Not Select=CRG Not Selected, CRG AC NPO Inactive=CRG AC NPO Inactive, CRG Hold=CRG Hold, Select Network None=--None--, Select Network AAC=Approved- Allegheny County, Decline Status=Your application was not selected, In Review=In Review, Pending Validations, NYC Inactive=NYC Inactive, Mode=ForProfits, Waitlist Status=Currently on the Waitlist, Select Network APC=Approved- Philadelphia County, SN Approved=Approved, SN YOCO=YOCO-Waitlist, Select Network Decline=Declined, Network Status Awaiting=Awaiting Selection Process}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGForProfit.TC010_CRG_NetworkSelection.testB(TC010_CRG_NetworkSelection.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63859}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b0550aa889067297d2a2d1e56d30267
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.Automation.Keywords.GenericKeywords.reload(GenericKeywords.java:468)
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1966628511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1966628511'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGForProfit.TC010_CRG_NetworkSelection.testB(TC010_CRG_NetworkSelection.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63859}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b0550aa889067297d2a2d1e56d30267
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.Automation.Keywords.GenericKeywords.reload(GenericKeywords.java:468)
+	... 27 more
+</pre></div></td>
+<td>420</td>
+<td>CRGForProfit.TC010_CRG_NetworkSelection@700fb871</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRGForProfit.TC011_CRG_DocUpload.testB()'><b>testB</b><br>Test class: CRGForProfit.TC011_CRG_DocUpload<br>Parameters: {Browser=Chrome, Owner_City=Anthill, Password=Lendistry2021, Doc Min=testfile.txt, Zip=5.0, Doc Max=testpdf15mb.pdf, Account Number=10.0, Doc1 Percentage=25, DPassword=Nishant@123#, Routing Number=9.0, Doc2 Percentage=50, UserName=sfdevops@lendistry.com.UAT, State=Missouri, Runmode=Y, Doc3 Percentage=75, BusinessName=Lendistry, Doc4 Percentage=100, Mode=ForProfits, Owner_Address=220, Locust Ave, Bank name=RBL bank}</td>
+<td></td>
+<td>379</td>
+<td>CRGForProfit.TC011_CRG_DocUpload@3b35a229</td></tr>
+<tr>
+<td title='CRGForProfit.TC009_CRG_ForProfitIncomplete.testB()'><b>testB</b><br>Test class: CRGForProfit.TC009_CRG_ForProfitIncomplete<br>Parameters: {Q5=Yes, Q4=Yes, Q3=836227, Owner_City=Anthill, Q2=353802, Q1=Yes, Mode=ForProfits, Race=White, FirstName=Marisol L, Status=INCOMPLETE FILE, Disabled=No, Ethnicity=Not Disclosed, Bussiness It=Textile, Annual revenue=2500879, NAICS=226668, MobileNo=700-455-7089, BusinessName=Lendistry, Grant Type=Payroll, Full time employess=20976, Owner_Address=220, Locust Ave, Zip Code=65488, Sumit application=No, EIN=000000001, Part time employee=34536, Owner_Address2=220, Locust Ave, Job created=40715, SSN=000000001, Network Status Awaiting=Awaiting Selection Process, Yes=Yes, ownerPercentage=10.0, Rural=Yes, Franchise=Yes, Website=none.com, Runmode=Y, Country=Adair County, BussinessType=Partnership, State=Missouri, Date=12/23/1992, Complet Application=Yes, Bussiness Do=Manufacturer, Jobs retained=203, Tell us more=Knitting Mill, Request amount=25000, Women owned=No, LastName=Test case, Veteran owned=Yes, Browser=Chrome, Q6=No}</td>
+<td></td>
+<td>356</td>
+<td>CRGForProfit.TC009_CRG_ForProfitIncomplete@29f7cefd</td></tr>
+<tr>
+<td title='CRGForProfit.TC012_UW_DocUploadToCloseDoc.testB()'><b>testB</b><br>Test class: CRGForProfit.TC012_UW_DocUploadToCloseDoc<br>Parameters: {Upload txt=testfile.txt, File Type=2019 Business Tax Return, Runmode=Y, UW Username=uwteamlead@yopmail.com, Email Text=Lendistry CRG Closing Team sent you a document to review and sign., Mode=ForProfits, Browser=Chrome, Upload pdf=testpdf.pdf, UW Password=test@123}</td>
+<td></td>
+<td>191</td>
+<td>CRGForProfit.TC012_UW_DocUploadToCloseDoc@9816741</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,982 @@
+
+#prod,uat
+env=prod
+
+
+reportPath=Report\\
+chromeDriver=\\chromedriver_win32\\chromedriver.exe
+fireFoxDriver=\\chromedriver_win32\\geckodriver.exe
+ieDriver = \\chromedriver_win32\\IEDriverServer.exe
+edgeDriver=\\chromedriver_win32\\msedgedriver.exe
+explicitWait=60
+
+UWUsername=uwteamlead@yopmail.com
+UWPassword=test@123
+
+
+
+#//*[text()[contains(.,'ABC')]]
+
+
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+# 										NYC PORTAL
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------t
+
+#  >> NYC - LEAD Basic Details <<
+NYC_SF_BD_tenantURL_xpath=((//*[@class='slds-form'])[1]//slot/lightning-formatted-text)[5]
+NYC_SF_BD_portalURL_xpath=((//*[@class='slds-form'])[1]//slot/lightning-formatted-text)[13]
+NYC_SF_BD_howCanweHelpUs_xpath=((//*[@class='slds-form'])[1]//slot/lightning-formatted-text)[16]
+
+NYC_TBDApplyNow_xpath=//*[@class='btn btn-primary padd20 apply-now-large']/span
+
+#  >> Let Get Start
+NYC_prefferedLanguage_xpath=//mat-select[@formcontrolname='preferredLanguageMasterId']
+NYC_prefferedLanguageList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_howDidYouHearAboutUs_xpath=//mat-select[@formcontrolname='howDidYouHearAboutUsMstrId']
+NYC_howDidYouHearAboutUsList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+
+# >> BUSINESS INFORMATION >>
+NYC_businessBorought_xpath=//mat-select[@formcontrolname='businessBoroughMstrId']
+NYC_businessBoroughtList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_locationType_xpath=//mat-select[@formcontrolname='locationTypeMstrId']
+NYC_locationTypeList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_businessStage_xpath=//mat-select[@formcontrolname='businessStageMstrId']
+NYC_businessStageList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+
+# >> NYC - How can we help you >>
+NYC_tempFullTimeEmp_xpath=//*[@formcontrolname='numberOfTempFullTimeEmployees']
+NYC_tempPartTimeEmp_xpath=//*[@formcontrolname='numberOfTempPartTimeEmployees']
+
+#  <-- Disclosures  -->
+NYC_questionTitle_xpath=//*[@class='questionTitle']
+NYC_DisclosuresQ1_xpath=(//*[contains(text(),'Please select an answer')])[1]
+NYC_DisclosuresQ1List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ1.1_xpath=(//*[contains(text(),'Please select an answer')])[2]
+NYC_DisclosuresQ1.1List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ2_xpath=(//div[@class='flex'])[2]/mat-form-field//input
+NYC_DisclosuresQ3_xpath=(//div[@class='flex'])[3]/mat-form-field//input
+NYC_DisclosuresQ4_xpath=(//*[contains(text(),'Please select an answer')])[3]
+NYC_DisclosuresQ4List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ5_xpath=(//*[contains(text(),'Please select an answer')])[4]
+NYC_DisclosuresQ5List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ6_xpath=(//*[contains(text(),'Please select an answer')])[5]
+NYC_DisclosuresQ6List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ7_xpath=(//*[contains(text(),'Please select an answer')])[6]
+NYC_DisclosuresQ7List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ8_xpath=(//*[contains(text(),'Please select an answer')])[7]
+NYC_DisclosuresQ8List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ9_xpath=(//*[contains(text(),'Please select an answer')])[8]
+NYC_DisclosuresQ9List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ10_xpath=(//*[contains(text(),'Please select an answer')])[9]
+NYC_DisclosuresQ10List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ11_xpath=(//*[contains(text(),'Please select an answer')])[10]
+NYC_DisclosuresQ11List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_DisclosuresQ12_xpath=(//*[contains(text(),'Please select an answer')])[11]
+NYC_DisclosuresQ12List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+
+NYC_SubmitButton_xpath=//*[contains(text(),'Submit')]
+NYC_SubmitForm_xpath=(//*[contains(text(),' Please select Yes or No ')])[1]
+NYC_SubmitFormList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYC_Save_continue_xpath=//*[contains(text(),'Save & Continue Later')]
+NYC_continue_xpath=(//*[contains(text(),'Continue')])[3]
+
+
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+# 										SALESFORCE APPLICATION LEAD
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+#	>> Salesforce Login <<
+SF_username_xpath=//*[@id='username']
+SF_password_xpath=//*[@id='password']
+SF_logInToSandbox_xpath=//*[@id='Login']
+SF_searchBox_xpath=(//*[contains(text(),'Search...')])[2]
+SF_search_xpath=(//*[text()[contains(.,'Search...')]])[2]
+SF_openEmail_xpath=//*[starts-with(text(),'Show more results for')]
+SF_closeDuplicateRostMes=//*[@class='forceVisualMessageQueue']//following::button
+SF_OpenLead_xpath=(//span[text()='Name']//following::span/a)[1]
+SF_NineDot_xpath=//*[@class='slds-icon-waffle']
+SF_OpenOpportunity_xpath=//*[@aria-label='Opportunities||List View']//following::tbody//a
+SF_Related_xpath=(//a[@class='slds-tabs_default__link' and text()='Related'])[1]
+SF_leadButton_xpath=//a[@title='Leads']
+SF_dropDownMenu_xpath=//*[@class='menu-button-item slds-dropdown-trigger slds-dropdown-trigger_click']
+SF_inviteToPortal_xpath=//*[@name='LCC_Email_Solutionlex']
+SF_iFrame_emailBody_xpath=//*[starts-with(@title,'Email Message: Send an Email')]
+SF_iFrame_emailLinkBody_xpath=//iframe[@id='contentFrame']
+SF_pardotLeadInvite_xpath=//a[text()='Start applying now!']
+
+
+                                             # >> Salesforce Global Lead or Opportunities <<
+                                             
+# >> Details >>
+SF_leadRecordType_xpath=//*[@class='recordType slds-grid']/div/span
+SF_portalAppStatus_xpath=//span[text()='Portal Application Status'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_tenantURL_xpath=//span[text()='Tenant URL'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_referralPartner_xpath=//span[text()='Tenant Referral Partner Name'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_preferredLanguage_xpath=//span[text()='Preferred Language'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_portalURL_xpath=//span[text()='Portal Login URL'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+SF_leadStatus__xpath=//span[text()='Lead Status'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_unqualifiedReason__xpath=//span[text()='Unqualified Reason'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# << Owner Details >>
+SF_ownerAddress1_xpath=//span[text()='Street (Owner 1)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ownerAddress2_xpath=//span[text()='Adddress2 (Owner)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ownerPhoneNo_xpath=//span[text()='Phone'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ownerCity_xpath=//span[text()='City (Owner 1)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_SSNNo_xpath=//span[text()='SSN'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_OwnerzipCode_xpath=//span[text()='Zip Code (Owner 1)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ownerDOB_xpath=//span[text()='DOB (Owner 1)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ownership_xpath=//span[text()='% of Ownership (Owner)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ownerCounty_xpath=//span[text()='County (Owner 1)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# >> Business Information <<
+SF_businessDBAName_xpath=//span[text()='DBA'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessEntityType_xpath=//span[text()='Entity Type'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessAddress2_xpath=//span[text()='Address2 (Business)'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessCounty_xpath=//span[text()='County'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessStartDate_xpath=//span[text()='Business Start Date'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessPhoneNo_xpath= //span[text()='Business Phone#'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessEIN_xpath=//span[text()='Business EIN'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessUrl_xpath=//span[text()='Website'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# >> How can we Help you <<
+SF_purposeOfGrant_xpath= //span[text()='Purpose of Grant'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_grantCreateNewJob_xpath=//span[text()='Will this grant create new jobs?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_requestAmount_xpath=//span[text()='Requested Amount'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_fullTimeEmployee_xpath=//span[text()='Number of Full Time Employees'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_jobCreated_xpath= //span[text()='# of Jobs Created'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_grossRevenue_xpath=//span[text()='Annual Gross Revenue'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_partTimeEmployee_xpath=//span[text()='Number of Part Time Employees'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_jobRetained_xpath=//span[text()='# of Jobs Retained'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# >> Business Demographics <<
+SF_womenOwned_xpath=//span[text()='Women Owned?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_customerBased_xpath=//span[text()='Who is Your Customer Base'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_Disabled_xpath=//span[text()='Disabled?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessDo_xpath=//span[text()='What does your Business do?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_ethnicity_xpath=//span[text()='Ethnicity'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_businessIt_xpath=//span[text()='What type of Business is it?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_rural_xpath=//span[text()='Rural'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_tellUsMore_xpath=//span[text()='Tell us more?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_veteran_xpath=//span[text()='Veteran?'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_franchise_xpath=//span[text()='Franchise'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_race_xpath= //span[text()='Race'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_NAICS_xpath=//span[text()='NAICS CODE'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_minorityOwnedBusiness_xpath=//span[text()='Minority Business Owned'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# >> Additional Information >>
+SF_viewAllReport_xpath=//*[text()='Credit Reports']//parent::span[text()='View All']
+SF_CRreportId_xpath=//*[text()='Report #']//following::span//a[contains(@class,'slds-truncate')]
+SF_reportStatus_xpath=(//td[contains(@class,'cellContainer')]/span/span)[5]
+SF_backToLead_xpath=//li[@class='slds-breadcrumb__item slds-line-height--reset' ]//following::li//a[contains(@href,'/lightning/r/')]
+
+# >> Related Credit Report >>
+SF_nonProfitStatus_xpath=//span[text()='Please confirm your non-profit status'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+SF_yourOrganisation_xpath=//span[text()='Please confirm that your organization'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+
+#  >> CRG - LEAD Owner Details <<
+SF_ownerName_xpath=//lightning-formatted-name[@slot='outputField']
+SF_ownerMobileNo_xpath=//span[text()='Mobile'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+#((//*[@class='slds-form'])[2]//slot/lightning-formatted-phone)[2]
+
+# >> CRG - LEAD Business Information <<
+SF_businesscompanyName_xpath=//span[text()='Company'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+#((//*[@class='slds-form'])[3]//slot/lightning-formatted-text)[1]
+
+# >> CRG - LEAD Discloser <<
+SF_DiscloserIframe_xpath=(//*[starts-with(text(),'DISCLOSURES')]//following::iframe)[1]
+SF_Discloser_Q1_xpath=(//td[@scope='col'])[2]
+SF_Discloser_Q2_xpath=(//td[@scope='col'])[5]
+SF_Discloser_Q3_xpath=(//td[@scope='col'])[8]
+SF_Discloser_Q4_xpath=(//td[@scope='col'])[11]
+SF_Discloser_Q5_xpath=(//td[@scope='col'])[14]
+SF_Discloser_Q6_xpath=(//td[@scope='col'])[17]
+SF_Discloser_Q6.1_xpath=(//td[@scope='col'])[20]
+SF_Discloser_Q6.2_xpath=(//td[@scope='col'])[23]
+SF_Discloser_Q7_xpath=(//td[@scope='col'])[20]
+SF_Discloser_Q8_xpath=(//td[@scope='col'])[23]
+SF_Discloser_Q9_xpath=(//td[@scope='col'])[26]
+SF_Discloser_Q10_xpath=(//td[@scope='col'])[29]
+SF_Discloser_Q11_xpath=(//td[@scope='col'])[32]
+SF_Discloser_Q12_xpath=(//td[@scope='col'])[35]
+SF_Discloser_Q13_xpath=(//td[@scope='col'])[38]
+SF_Discloser_Q14_xpath=(//td[@scope='col'])[41]
+SF_Discloser_Q15_xpath=(//td[@scope='col'])[44]
+SF_Discloser_Q16_xpath=(//td[@scope='col'])[47]
+SF_Discloser_Q17_xpath=(//td[@scope='col'])[50]
+SF_Discloser_Q18_xpath=(//td[@scope='col'])[53]
+SF_Discloser_Q19_xpath=(//td[@scope='col'])[56]
+SF_Discloser_Q20_xpath=(//td[@scope='col'])[59]
+SF_Discloser_Q21_xpath=(//td[@scope='col'])[62]
+SF_Discloser_Q22_xpath=(//td[@scope='col'])[65]
+SF_Discloser_Q23_xpath=(//td[@scope='col'])[68]
+SF_Discloser_Q24_xpath=(//td[@scope='col'])[71]
+SF_Discloser_Q25_xpath=(//td[@scope='col'])[74]
+SF_Discloser_Q26_xpath=(//td[@scope='col'])[77]
+SF_Discloser_Q27_xpath=(//td[@scope='col'])[80]
+SF_Discloser_Q28_xpath=(//td[@scope='col'])[83]
+SF_Discloser_Q29_xpath=(//td[@scope='col'])[86]
+SF_Discloser_Q30_xpath=(//td[@scope='col'])[89]
+SF_Discloser_Q31_xpath=(//td[@scope='col'])[92]
+SF_Discloser_Q32_xpath=(//td[@scope='col'])[95]
+SF_Discloser_Q33_xpath=(//td[@scope='col'])[98]
+SF_Discloser_Q34_xpath=(//td[@scope='col'])[101]
+SF_Discloser_Q35_xpath=(//td[@scope='col'])[104]
+SF_Discloser_Q36_xpath=(//td[@scope='col'])[107]
+SF_Discloser_Q37_xpath=(//td[@scope='col'])[110]
+
+#--------------------------------------------------------------------------
+#------------------------------- EDIT Discloser ---------------------------
+#--------------------------------------------------------------------------
+SF_Edit_discloserQ4_xpath=(//td[@scope='col'])[12]/a
+SF_Edit_discloserQ5_xpath=(//td[@scope='col'])[15]/a
+SF_Edit_discloserQ6_xpath=(//td[@scope='col'])[18]/a
+SF_Edit_discloser_xpath=//*[@name='mySelect']
+SF_Edit_discloserList_xpath=//*[@name='mySelect']/option
+SF_Edit_applyColumn_xpath=//button[@title='Apply Column']
+
+
+
+# >> Convert Lead into oppertunity <<
+SF_Lead_Convert_xpath=//*[text()='Converted']
+SF_Lead_selectConvertStatus_xpath=(//*[@class='uiOutputText'])[1]
+SF_Lead_convertButton_xpath=//button[text()='Convert']
+SF_Lead_opportunities_xpath=((//*[@class='bodyConvertedItem'])[3]//a)[1]
+
+SF_selectExistingRadioButton_xpath=(//span[text()='Choose Existing']//preceding-sibling::span)[2]
+
+
+SF_searchExistingLead_xpath=//*[@title='Search for matching accounts']
+SF_selectExistingLead_xpath=(//ul[contains(@class,'lookup__list')]/li)[1]
+SF_AccountRadioButton_xpath=(//*[contains(text(),'Account Matches')]//following::label/span)[2]
+
+#                                               >> Opportunities <<  
+# >>Opportunities Owner Deatis <<
+SF_Opportunities_OwnerName_xpath= //span[text()='Owner'][contains(@class,'field-label')]/following::a//descendant::span
+
+# >> Opportunities Business Deatis <<
+SF_accountName_xpath=//span[text()='Account Name'][contains(@class,'field-label')]/following::a//descendant::span
+
+# >> Opportunities DIR Number <<
+SF_applicationDIRNo_xpath=//span[text()='Application ID'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# >> Satge verification <<
+SF_UW_verification_xpath=(//*[@title='UW']/span)[2]
+
+# >> Salesforce Score card <<
+SF_scoreDetailsIframe_xpath=//*[starts-with(text(),'SCORECARD DETAILS')]//following::iframe
+SF_SC_CDFI_xpath=(//*[@class='detailList']//td/span)[1]
+SF_SC_LowToModerate_xpath=(//*[@class='detailList']//td/span)[2]
+SF_SC_investementArea_xpath=(//*[@class='detailList']//td/span)[4]
+SF_SC_areaApprovedSco_xpath=(//*[@class='detailList']//td/span)[6]
+
+# >> Document percentage
+SF_documentPercentage_xpath=//span[text()='% of Document Completion'][contains(@class,'field-label')]//following::span//*[@slot='outputField']
+
+# >> New Lead POP UP <<
+SF_newLead_xpath=//*[text()='New' and @title='New']//parent::a
+SF_recordType_Grant_xpath=//span[text()='GRANT']/ancestor::label//following-sibling::span
+SF_recordType_Grant_NYR_xpath=//span[text()='GRANT-NYR']/ancestor::label//following-sibling::span
+SF_NextButton_xpath=//*[text()='New Lead']//following::*[text()='Next']
+SF_snag_Name_xpath=//a[text()='Name']
+SF_newLead_Salutation_xpath=(//label[text()='Salutation'][contains(@class,'slds-form-element')]//following::button)[1]
+SF_newLead_FirstName_xpath=(//label[text()='First Name'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_newLead_MiddleName_xpath=(//label[text()='Middle Name'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_newLead_LastName_xpath=(//label[text()='Last Name'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_snag_Phone_xpath=//a[text()='Phone']
+SF_newLead_Phone_xpath=(//label[text()='Phone'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_snag_Mobile_xpath=//a[text()='Mobile Phone']
+SF_newLead_Mobile_xpath=(//label[text()='Mobile'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_newLead_ValidatePhone_xpath=//div[contains(text(),'Mobile Number')]
+SF_snag_Company_xpath=//a[text()='Company']
+SF_newLead_Company_xpath=(//label[text()='Company'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_newLead_Email_xpath=//*[@name='Email']
+
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+# 										SALESFORCE APPLICATION LEAD---OPPORTUNITIES-->EDIT APPLICATION
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+
+# >> Salesforce Lead <<
+
+SF_editButton_xpath=//button[@name='Edit']
+SF_Edit_ownerPercentage_xpath=(//label[text()='% of Ownership (Owner)'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_Edit_companyName_xpath=//input[@name='Company']
+SF_Edit_DBAName_xpath=(//label[text()='DBA'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_Edit_businessPhoneNo_xpath=(//label[text()='Business Phone#'][contains(@class,'slds-form-element')]//following::input)[1]
+SF_Edit_purposeOfGrant_xpath=(//label[text()='Purpose of Grant'][contains(@class,'slds-form-element')]//following::div)[2]
+SF_Edit_dropDownOptionList_xpath=//*[@class='slds-combobox_container']//following::lightning-base-combobox-item//*[@class='slds-truncate']
+
+SF_Edit_veteran_xpath=//label[text()='Veteran?'][contains(@class,'slds-form-element')]//following::button
+SF_Edit_rance_xpath=(//label[text()='Race'][contains(@class,'slds-form-element')]//following::button)[1]
+SF_Edit_saveEdit_xpath=//*[@name='SaveEdit']
+
+SF_Edit_NetworkSelection_xpath=//*[starts-with(@title,'Edit Network Selection')]
+SF_Edit_NetworkButton_xpath=(//label[text()='Network Selection'][contains(@class,'slds-form')]//following::button)[1]
+
+SF_Edit_viewAllDependcies_xpath=//label[text()='Unqualified Reason'][contains(@class,'slds-form')]//following::button[text()='View all dependencies']
+SF_Edit_editStatus_xpath=//*[starts-with(@name,'Status')]
+SF_Edit_unqualifiedReasonStatus_xpath=//*[starts-with(@name,'Unqualified_Reason__c')]
+SF_Edit_applyReason_xpath=//button[@name='apply' and text()='Apply']
+
+
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+# 										UNDER WRITER PORTAL
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+#Loader
+UWLoader_xpath=//*[contains(@class,'la-line-spin-clockwise-fade la-3x')]
+
+# >> Under Writer Portal
+UW_Application_xpath=//*[@id='allApplicationTab']
+UW_searchApplication_xpath=//*[@class='form-control']
+UW_DIRColor_xpath=//*[@class='dot APPROVED']
+UW_DIR_xpath=(//*[@id='salesUnderwriterApplicationTable']//a)[1]
+UW_backToPortal_xpath=//span[@id='titleSpan']/a
+UW_Logout_xpath=//*[@class='logoutText']/a
+
+# >> Owner Data & Credit Profile <<
+UW_ownerDataCreditProfile_xpath=//*[starts-with(@id,'ownerDataCreditProfilePageId')]
+UW_viewConsumerCreditReport_xpath=//*[starts-with(@id,'viewConsumerCreditReport')]
+UW_downloadCreditReport_xpath=//*[starts-with(@id,'consumerPDFfilePreview')]
+
+# >> EDIT Application
+UW_saveButton_xpath=(//*[@class='text-right']/button)[1]
+UW_continueButton_xpath=(//*[@class='mat-dialog-actions']/button)[1]
+
+# >> Owner Details <<
+UW_ownerDetailPannel_xpath=//*[starts-with(text(),' OWNER DETAILS')]//ancestor::*[contains(@id,'header-1')]
+UW_EditownerDetails_xpath=(//button[@type='submit'])[2]
+UW_ownerPercentage_xpath=//*[@formcontrolname='ownerPercentage']
+
+# >> Owner Details Verification <<
+UW_verifyOwnerPercentage_xpath=(//li[text()=' % of Ownership '][contains(@class,'list-group')]//following::span)[1]
+
+# >> Business Information <<
+UW_businessInformationPannel_xpath=//*[starts-with(text(),' BUSINESS INFORMATION ')]//ancestor::*[contains(@id,'header-2')]
+UW_EditbusinessInformation_xpath=(//button[@type='submit'])[3]
+UW_businessType_xpath=//*[@formcontrolname='businessTypeId']
+UW_businessTypeList_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+UW_businessURL_xpath=//*[@formcontrolname='websiteUrl']
+
+# >> Business Information Verification <<
+UW_verifyBusinessName_xpath=//*[text()=' BUSINESS INFORMATION ']//following::*[text()=' Business Name ']/span
+UW_verifyBusinessDBA_xpath=(//li[text()=' DBA (Doing Business As) '][contains(@class,'list-group')]//following::span)[1]
+UW_verifyBusinessPhoneNo_xpath=(//li[text()=' Business Phone# '][contains(@class,'list-group')]//following::span)[1]
+
+# >> Finacial Information <<
+UW_finacialInformationPannel_xpath=//*[starts-with(text(),' FINANCIAL INFORMATION')]//ancestor::*[contains(@id,'header-3')]
+UW_EditfinacialInformation_xpath=(//button[@type='submit'])[4]
+UW_grantType_xpath=//*[@formcontrolname='purposeOfLoan']
+UW_grantTypeList_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+UW_fullTimeEmp_xpath=//*[@formcontrolname='numberOfFullTimeEmployees']
+UW_partTimeEmp_xpath=//*[@formcontrolname='numberOfPartTimeEmployees']
+UW_jobCreated_xpath=//*[@formcontrolname='noOfJobsCreated']
+UW_jobRetained_xpath=//*[@formcontrolname='noOfJobRetained']
+
+# >> Finacial Information Verification <<
+UW_VerifyPurposeOfGrant_xpath=(//li[text()=' Purpose of Grant '][contains(@class,'list-group')]//following::span)[1]
+
+# >> Business Demographics <<
+UW_businessDemographicsPannel_xpath=//*[starts-with(text(),' BUSINESS DEMOGRAPHICS')]//ancestor::*[contains(@id,'header-4')]
+UW_editbusinessDemographics_xpath=(//button[@type='submit'])[5]
+
+# >> Business Demographics Verification <<
+UW_VerifyVeteranOwned_xpath=(//li[text()=' Veteran-Owned Business '][contains(@class,'list-group')]//following::span)[1]
+UW_VerifyRaceOwned_xpath=(//li[text()=' Race '][contains(@class,'list-group')]//following::span)[1]
+
+# >> Discloser <<
+UW_discloserPannel_xpath=//*[starts-with(text(),' DISCLOSURES')]//ancestor::*[contains(@id,'header-5')]
+UW_EditdiscloserPannel_xpath=(//button[@type='submit'])[6]
+UW_needOfBusinessLoan_xpath=(//*[@class='mat-select-trigger'])[3]
+UW_needOfBusinessLoanList_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+UW_updateSalesforceStatus_xpath=//*[@formcontrolname='currentOpportunityStage']//span
+UW_updateSalesforceStatusList_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+
+# >> Discloser Verification <<
+UW_VerifyDiscloserQ4_xpath=((//ul[@class='app-list'])[6]//span)[8]
+UW_VerifyDiscloserQ5_xpath=((//ul[@class='app-list'])[6]//span)[10]
+UW_VerifyDiscloserQ6_xpath=((//ul[@class='app-list'])[6]//span)[12]
+
+# >> Supporting Documents <<
+UW_openSupportingDoc_xpath=(//*[@class='nav notranslate']//a)[3]
+UW_SD_continue_xpath=(//button[@class='btn green' and text()=' Continue '])[1]
+UW_SD_uploadDocumnet_xpath=//button[@id='uploadDocumentBtn']
+UW_SD_fileType_xpath=//select[@id='fileType']
+UW_SD_fileTypeList_xpath=//select[@id='fileType']/option
+UW_SD_choosefile_xpath=//input[@id='businessFileName']
+UW_SD_uploadDoc_xpath=//button[@id='uploadFileDocument']
+UW_SD_closeUploadDoc_xpath=(//div[@class='modal-footer']/button)[3]
+UW_SD_fileLeft_xpath=(//*[contains(text(),'testpdf')])[1]
+UW_SD_fileRight_xpath=(//*[contains(text(),'testpdf')])[2]
+UW_SD_mergePdfDownload_xpath=//button[@id='mergedDownload']
+
+# >> Document and Checklist <<
+UW_Doc_openDocandChechecklist_xpath=(//*[@class='nav notranslate']//a)[5]
+UW_Doc_fileUploadStatus_xpath=//div[normalize-space(text())='File Uploaded successfully!']
+UW_Doc_uploadActionStatus_xpath=//*[starts-with(@class,'toast-message')]
+UW_Doc_rejectActionYes_xpath=//span[@class='mat-button-wrapper' and text()='Yes']
+
+#Tax Exemption
+UW_Doc_taxExemption_xpath=//a[text()=' 501(c)(3), 501(c)(6), or 501(c)(19) Tax Exemption Letter ']
+UW_Doc_chooseTaxExemption_xpath=//input[@id='uploadFile_501(c)(3)or501(c)(6)TaxExemptionLetter']
+UW_Doc_uploadTaxExemption_xpath=//*[@id='501(c)(3)or501(c)(6)TaxExemptionLetter']//child::button[text()='Upload']
+UW_Doc_taxExemptionActionV_xpath=(//a[text()=' 501(c)(3), 501(c)(6), or 501(c)(19) Tax Exemption Letter ']//following::button)[2]
+UW_Doc_taxExemptionActionA_xpath=(//a[text()=' 501(c)(3), 501(c)(6), or 501(c)(19) Tax Exemption Letter ']//following::button)[3]
+UW_Doc_taxExemptionActionR_xpath=(//a[text()=' 501(c)(3), 501(c)(6), or 501(c)(19) Tax Exemption Letter ']//following::button)[4]
+
+#Application Certification
+UW_Doc_applicationCertification_xpath=//a[text()=' Application Certification ']
+UW_Doc_chooseApplication_xpath=//input[@id='uploadFile_ApplicationCertification']
+UW_Doc_uploadApplication_xpath=//*[@id='ApplicationCertification']//child::button[text()='Upload']
+UW_Doc_applicationActionV_xpath=(//a[text()=' Application Certification ']//following::button)[2]
+UW_Doc_applicationActionA_xpath=(//a[text()=' Application Certification ']//following::button)[3]
+UW_Doc_applicationActionR_xpath=(//a[text()=' Application Certification ']//following::button)[4]
+
+#Goverment issue ID
+UW_Doc_governmentIssued_xpath=//a[text()=' Government issued ID ']
+UW_Doc_chooseGovernment_xpath=//input[@id='uploadFile_GovtID']
+UW_Doc_uploadGovernment_xpath=//*[@id='GovtID']//child::button[text()='Upload']
+UW_Doc_governmentV_xpath=(//a[text()=' Government issued ID ']//following::button)[2]
+UW_Doc_governmentA_xpath=(//a[text()=' Government issued ID ']//following::button)[3]
+UW_Doc_governmentR_xpath=(//a[text()=' Government issued ID ']//following::button)[4]
+
+#2019 Tax Return
+UW_Doc_2019TaxReturn_xpath=//a[contains(text(),'Most Recent')]
+UW_Doc_choose2019TaxReturn_xpath=//input[contains(@id,'TaxReturns')]
+UW_Doc_upload2019TaxReturn_xpath=//*[contains(@id,'MostRecent')]//child::button[text()='Upload']
+UW_Doc_2019TaxReturnV_xpath=(//a[contains(text(),'Most Recent')]//following::button)[2]
+UW_Doc_2019TaxReturnA_xpath=(//a[contains(text(),'Most Recent')]//following::button)[3]
+UW_Doc_2019TaxReturnR_xpath=(//a[contains(text(),'Most Recent')]//following::button)[4]
+
+#Ficitius name
+UW_Doc_fictitiousName_xpath=//a[contains(text(),'Fictitious Name')]
+UW_Doc_chooseFictitious_xpath=//input[contains(@id,'RegistrationorGovernmentIssued')]
+UW_Doc_uploadFictitious_xpath=//a[contains(text(),'Business License')]//following::button[text()='Upload']
+UW_Doc_fictitiousNameV_xpath=(//a[contains(text(),'Fictitious Name')]//following::button)[2]
+UW_Doc_fictitiousNameA_xpath=(//a[contains(text(),'Fictitious Name')]//following::button)[3]
+UW_Doc_fictitiousNameR_xpath=(//a[contains(text(),'Fictitious Name')]//following::button)[4]
+
+# >> Index >>
+UW_opneIndex_xpath=//*[text()='Index']//ancestor::a
+UW_index_bankStatement_xpath=//*[contains(@title,'Bank Statement') and text()='Bank Statements']
+UW_index_approve_xpath=//button[@id='approveFolder' and text()=' Approve ']
+UW_approveReview_xpath=//*[contains(text(),'AssetReport')]//following-sibling::i
+
+# NYR - Document and Checklist
+
+#Goverment issue Photo ID
+UW_DC_govIssuedPhotoID_xpath=//*[@id='GovernmentIssuedPhotoID']//child::a
+UW_DC_selectGovIssuedPhotoID_xpath=//input[@id='uploadFile_GovernmentIssuedPhotoID']
+UW_DC_uploadGovIssuedPhotoID_xpath=//*[@id='GovernmentIssuedPhotoID']//child::button[text()='Upload']
+UW_DC_govIssuedPhotoIDActionV_xpath=(//*[@id='GovernmentIssuedPhotoID']//child::button)[2]
+UW_DC_govIssuedPhotoIDActionA_xpath=(//*[@id='GovernmentIssuedPhotoID']//child::button)[3]
+UW_DC_govIssuedPhotoIDActionR_xpath=(//*[@id='GovernmentIssuedPhotoID']//child::button)[4]
+
+#2019 Business Tax Return
+UW_DC_2019BusinessTax_xpath=//*[@id='2019BusinessTaxReturn']//child::a
+UW_DC_select2019BusinessTax_xpath=//input[@id='uploadFile_2019BusinessTaxReturn']
+UW_DC_upload2019BusinessTax_xpath=//*[@id='2019BusinessTaxReturn']//child::button[text()='Upload']
+UW_DC_2019BusinessTaxActionV_xpath=(//*[@id='2019BusinessTaxReturn']//child::button)[2]
+UW_DC_2019BusinessTaxActionA_xpath=(//*[@id='2019BusinessTaxReturn']//child::button)[3]
+UW_DC_2019BusinessTaxActionR_xpath=(//*[@id='2019BusinessTaxReturn']//child::button)[4]
+
+#2020 Business Tax Return
+UW_DC_2020BusinessTax_xpath=//*[@id='2020BusinessTaxReturn']//child::a
+UW_DC_select2020BusinessTax_xpath=//input[@id='uploadFile_2020BusinessTaxReturn']
+UW_DC_upload2020BusinessTax_xpath=//*[@id='2020BusinessTaxReturn']//child::button[text()='Upload']
+UW_DC_2020BusinessTaxActionV_xpath=(//*[@id='2020BusinessTaxReturn']//child::button)[2]
+UW_DC_2020BusinessTaxActionA_xpath=(//*[@id='2020BusinessTaxReturn']//child::button)[3]
+UW_DC_2020BusinessTaxActionR_xpath=(//*[@id='2020BusinessTaxReturn']//child::button)[4]
+
+# Proof of Business Location	
+UW_DC_businessLocation_xpath=//*[@id='ProofofBusinessLocation']//child::a
+UW_DC_selectBusinessLocation_xpath=//input[@id='uploadFile_ProofofBusinessLocation']
+UW_DC_uploadBusinessLocation_xpath=//*[@id='ProofofBusinessLocation']//child::button[text()='Upload']
+UW_DC_businessLocationActionV_xpath=(//*[@id='ProofofBusinessLocation']//child::button)[2]
+UW_DC_businessLocationActionA_xpath=(//*[@id='ProofofBusinessLocation']//child::button)[3]
+UW_DC_businessLocationActionR_xpath=(//*[@id='ProofofBusinessLocation']//child::button)[4]
+
+#NYS 45
+UW_DC_NYS45_xpath=//*[@id='NYS45']//child::a
+UW_DC_selectNYS45_xpath=//input[@id='uploadFile_NYS45']
+UW_DC_uploadNYS45_xpath=//*[@id='NYS45']//child::button[text()='Upload']
+UW_DC_NYS45ActionV_xpath=(//*[@id='NYS45']//child::button)[2]
+UW_DC_NYS45ActionA_xpath=(//*[@id='NYS45']//child::button)[3]
+UW_DC_NYS45ActionR_xpath=(//*[@id='NYS45']//child::button)[4]
+
+#Complete IRS form 4506C
+UW_DC_4506C_xpath=//*[@id='4506C']//child::a
+UW_DC_select4506C_xpath=//input[@id='uploadFile_4506C']
+UW_DC_upload4506C_xpath=//*[@id='4506C']//child::button[text()='Upload']
+UW_DC_4506CActionV_xpath=(//*[@id='4506C']//child::button)[2]
+UW_DC_4506CActionA_xpath=(//*[@id='4506C']//child::button)[3]
+UW_DC_4506CActionR_xpath=(//*[@id='4506C']//child::button)[4]
+
+#Proof of Business Organisation
+UW_DC_businessOrganization_xpath=//*[@id='ProofofBusinessOrganization']//child::a
+UW_DC_selectBusinessOrganization_xpath=//input[@id='uploadFile_ProofofBusinessOrganization']
+UW_DC_uploadBusinessOrganization_xpath=//*[@id='ProofofBusinessOrganization']//child::button[text()='Upload']
+UW_DC_businessOrganizationActionV_xpath=(//*[@id='ProofofBusinessOrganization']//child::button)[2]
+UW_DC_businessOrganizationActionA_xpath=(//*[@id='ProofofBusinessOrganization']//child::button)[3]
+UW_DC_businessOrganizationActionR_xpath=(//*[@id='ProofofBusinessOrganization']//child::button)[4]
+
+#Additional Business Owner
+UW_DC_additionalBusiness_xpath=//*[@id='AdditionalBusinessOwners']//child::a
+UW_DC_selectAdditionalBusiness_xpath=//input[@id='uploadFile_AdditionalBusinessOwners']
+UW_DC_uploadAdditionalBusiness_xpath=//*[@id='AdditionalBusinessOwners']//child::button[text()='Upload']
+UW_DC_additionalBusinessActionV_xpath=(//*[@id='AdditionalBusinessOwners']//child::button)[2]
+UW_DC_additionalBusinessActionA_xpath=(//*[@id='AdditionalBusinessOwners']//child::button)[3]
+UW_DC_additionalBusinessActionR_xpath=(//*[@id='AdditionalBusinessOwners']//child::button)[4]
+
+# >> Bank Stmt. Summary >>
+UW_opneBankStmtSummary_xpath=//*[text()='Bank Stmt. Summary']//ancestor::a
+UW_BSS_expandSendFund_xpath=//a[contains(text(),'Where should we send')]
+UW_BSS_accountName_xpath=(//td[text()=' Account Name ']//following::strong)[1]
+UW_BSS_bankName_xpath=(//td[text()=' Bank Name ']//following::strong)[1]
+UW_BSS_Street_xpath=(//td[text()=' Street ']//following::strong)[1]
+UW_BSS_City_xpath=(//td[text()=' City ']//following::strong)[1]
+UW_BSS_State_xpath=(//td[text()=' State ']//following::strong)[1]
+UW_BSS_Zip_xpath=(//td[text()=' Zip ']//following::strong)[1]
+UW_BSS_routingNumber_xpath=(//td[text()=' Routing Number ']//following::strong)[1]
+UW_BSS_acountNumber_xpath=(//td[text()=' Account Number ']//following::strong)[1]
+
+# >> Score card verifycation  ||  Business Information <<
+UW_SC_businessAddress_xpath=//*[@formcontrolname='businessAddress']
+UW_SC_businessAddress2_xpath=//*[@formcontrolname='businessAddress2']
+UW_SC_businessCity_xpath=//*[@formcontrolname='businessCity']
+UW_SC_businessState_xpath=//*[@formcontrolname='businessStateId']
+UW_SC_businessStateDropDown_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+UW_SC_businessCounty_xpath=//*[@formcontrolname='countyId']
+UW_SC_businessCountyDropDown_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+UW_SC_businessZip_xpath=//*[@formcontrolname='businessZipcode']
+
+# >> Score card verifycation  ||  Business Demographics <<
+UW_SC_BDwomenOwned_xpath=//*[@formcontrolname='isWomenOwned']
+UW_SC_BDwomenOwnedDropDown_xpath=//*[@class='cdk-overlay-pane']//mat-option/span
+UW_SC_scoreCardTab_xpath=//*[@id='scoreCardTab' and text()='Score Card']
+UW_SC_Continue_xpath=(//*[@id='UnsavedChangesModelForAngular']//button)[2]
+UW_SC_factorsCDFI_xpath=(//*[@class='mat-cell']//mat-form-field//input)[1]
+UW_SC_factorsLowToModerate_xpath=(//*[@class='mat-cell']//mat-form-field//input)[2]
+UW_SC_factorsWomenOwned_xpath=(//*[@class='mat-cell']//mat-form-field//input)[7]
+UW_SC_Approve_xpath=//*[@class='flex']/button
+
+# >> UW Screen >>
+UWScreen_xpath=//*[text()='UW Screen ']//ancestor::a
+UWScreen_continueButton_xpath=(//*[@class='btn green' and normalize-space(text())='Continue'])[1]
+
+UWScreen_business_xpath=//*[@id='corporateName']
+UWScreen_businessStartDate_xpath=//*[@id='businessStartdate']
+UWScreen_businessEntity_xpath=//*[@id='businessEntity']
+UWScreen_businessAddress_xpath=//*[@id='businessAddress']
+UWScreen_businessCity_xpath=//*[@id='businessCity']
+UWScreen_businessState_xpath=//*[@id='businessState']
+UWScreen_businessZip_xpath=//*[@id='businessZipcode']
+UWScreen_businessCounty_xpath=//*[@id='businessCounty']
+UWScreen_businessPhone_xpath=//*[@id='businessPhoneNo']
+UWScreen_businessNAICS_xpath=//*[@id='nacisCode']
+UWScreen_businessWebSite_xpath=//*[@id='websiteUrl']
+UWScreen_businessEIN_xpath=//*[@id='einNumbner']
+UWScreen_financialGrantAmount_xpath=//*[@id='loanAmount']
+UWScreen_nextButton_xpath=//button[@id='saveAnalysisGroupthreeStep1']
+UWScreen_saveButton_xpath=//button[@id='saveBusinessOverview']
+UWScreen_continueOverview_xpath=//a[@id='saveBusinessOverviewContinue' and text()=' Continue ']
+
+# >> Closing Document >>
+UW_ContinueToClosingDoc=(//*[@class='btn green' and normalize-space(text())='Continue'])[2]
+UW_openClosingDocument_xpath=//*[text()='Closing Documents']//ancestor::a
+UW_CD_saveGeneratePDF_xpath=//button[text()='Save & Generate pdf']
+UW_CD_viewGeneratePDF_xpath=//*[contains(text(),'View Generated pdf')]
+UW_CD_sendDocsign_xpath=//button[text()=' Send DocuSign ']
+YOP_emailText_xpath=//td[contains(text(),'review and sign.')]
+
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+#											CRG- PROFIT
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+
+#  >> Loader >>
+portalLoader_xpath=//*[contains(@class,'la-ball-spin-clockwise la-3x')]
+
+#Login Form
+Lendistry_cameoEmail_xpath=//input[@formcontrolname='username' or@ id='inputEmail']
+Lendistry_cameoPassword_xpath=//input[@id='inputPassword']
+Lendistry_cameoSignIn_xpath=//button[@id='login']
+Lendistry_cameoResetPassword_xpath=//input[@formcontrolname='resetpassword']
+Lendistry_cameoResetConfirmPassword_xpath=//input[@formcontrolname='resetconformpassword']
+Lendistry_cameoSubmit_xpath=//button[@id='login']
+Lendistry_cameoEditApplication_xpath=//*[contains(text(),'Edit Application')]
+
+
+
+#  <-- YOP EMAIL -->
+YOP_email=//input[@class='ycptinput']
+YOP_copyEmail=//*[@class='bname']
+YOP_refresh_xpath=//button[@id='refresh']
+YOP_inbox=//div[contains(text(),'Lendistry username and password')]
+YOP_selectedForGrant_xpath=//div[contains(text(),'Your Grant Agreement')]
+YOP_iFrameInbox=ifinbox
+YOP_iFrameOutbox=ifmail
+YOP_openLink=//a[contains(text(),'Click here to log in')]
+YOP_getEmail=//*[@id="mail"]/div/table/tbody/tr/td/table[2]/tbody/tr[2]/td/p[2]/span
+YOP_checkInbox=//button[@class='md']
+
+# <-- Grant Program for For-Non Profits -->
+NPO_applyNow_xpath=(//h3[contains(text(),'for Non-Profits')]//following::span)[1]
+
+# <-- Grant Program for Art and culture Non-Profits -->
+ACNPO_applyNow_xpath=(//h3[contains(text(),'Arts & Cultural')]//following::span)[1]
+
+# Business Information
+NPO_nonProfitStatus_xpath=//mat-select[@formcontrolname='business_nonprofit_status']
+NPO_nonProfitStatusList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NPO_organizationService_xpath=//mat-select[@formcontrolname='business_topfour_priorities']
+NPO_organizationServiceList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+
+# <-- Discloser -->
+NPO_DisclosuresQ4_xpath=(//div[@class='flex'])[4]/mat-form-field//input
+NPO_DisclosuresQ5_xpath=(//div[@class='flex'])[5]/mat-form-field//input
+
+# <-- Grant Program for For-Profits -->
+#Form 1
+Lendistry_clickHereToApply_xpath=//a[@class='btn btn-lg btn-primary']
+Lendistry_GPFProfit_xpath=(//button[@class='btn btn-primary padd20 apply-now-large']/span)[2]
+Lendistry_firstName_xpath=//input[@formcontrolname='first_name']
+Lendistry_lastName_xpath=//input[@formcontrolname='last_name']
+Lendistry_email_xpath=//input[@formcontrolname='email_address']
+Lendistry_confirmEmail_xpath=//input[@formcontrolname='confirm_email_address']
+Lendistry_phoneNo_xpath=//input[@formcontrolname='phoneNo']
+Lendistry_confirmPhoneNo_xpath=//input[@formcontrolname='confirmPhoneNo']
+Lendistry_businessName_xpath=//input[@formcontrolname='corporateName']
+Lendistry_zipCode_xpath=//input[@formcontrolname='zipcode']
+Lendistry_checkBox_xpath=(//div[@class='mat-checkbox-inner-container'])[1]
+Lendistry_continueForm_xpath=(//button[starts-with(@class,'btn-deafult btn-primary mat-button')])[1]
+
+#<------Salesforce Invite To Portal (Pardot Lead Invite)---------------
+Pardot_checkbox_SMSservice_xpath=//*[starts-with(@id,'consent-check-box')]
+Pardot_checkbox_TermCondition_xpath=(//*[starts-with(@id,'consent-check-box')])[2]
+Pardot_ownerInfo_continue_xpath=//*[@id='personalContinue']
+LL_globalDropDownList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+#//*[contains(text(),'OWNER PERSONAL')]//following::span[normalize-space(text())='Continue']
+Pardot_nextButton_xpath=//*[normalize-space(text())='Next']
+Pardot_ownerTitle_xpath=//*[starts-with(@placeholder,'Owner Title')]
+Pardot_owner1_SSN_xpath=//*[starts-with(@placeholder,'SSN Number')]
+Pardot_owner1_DOB_xpath=//*[starts-with(@placeholder,'Date of Birth')]
+Pardot_owner1_Percentage_xpath=//*[starts-with(@placeholder,'Owner Percentage')]
+Pardot_owner1_cellPhone_xpath=//*[@id='ownerCellPhoneNoID0']
+Pardot_owner1_primaryResidence_xpath=//*[starts-with(@placeholder,'Owner Primary Residence')]
+Pardot_owner1_city_xpath=//*[starts-with(@placeholder,'Owner City')]
+Pardot_owner1_state_xpath=//*[starts-with(@placeholder,'State')]
+Pardot_owner1_zipCode_xpath=//*[normalize-space(text())='Owner 1']//following::*[@placeholder='Zip Code']
+Pardot_accountCreateNotification_xpath=//*[starts-with(@id,'yes-button')]
+#use of funding
+Pardot_acquireAnotherBusiness_xpath=//*[normalize-space(text())='Acquire Another Business']
+Pardot_equipmentPurchase_xpath=//*[normalize-space(text())='Equipment Purchase']
+Pardot_useOfFunding_Continue_xpath=//*[contains(text(),'USE of Funding')]//following::span[normalize-space(text())='Continue']
+#Who is user coustomer base
+Pardot_B2B_xpath=//*[normalize-space(text())='Business to Business']
+Pardot_B2C_xpath=//*[normalize-space(text())='Business to Consumer']
+Pardot_userCustomerBase_continue_xpath=//*[contains(text(),'Customer Base')]//following::span[normalize-space(text())='Continue']
+#Business Do
+Pardot_Manufacturer_xpath=//*[normalize-space(text())='Manufacturer']
+Pardot_businessDo_Continue_xpath=//*[contains(text(),' Business Do')]//following::span[normalize-space(text())='Continue']
+#Business It
+Pardot_Textile_xpath=//*[normalize-space(text())='Textile']
+Pardot_businessIt_Continue_xpath=//*[contains(text(),'Business Is It')]//following::span[normalize-space(text())='Continue']
+#Tell Us More
+Pardot_knittingMill_xpath=//*[normalize-space(text())='Knitting Mill']
+Pardot_tellUsMore_Continue_xpath=//*[contains(text(),' Tell Us More')]//following::span[normalize-space(text())='Continue']
+#Business Profile
+Pardot_dbaName_xpath=//input[@formcontrolname='dbaName']
+Pardot_federalTaxId_xpath=//input[@formcontrolname='federalTaxId']
+Pardot_stateIncorporation_xpath=//mat-select[@formcontrolname='businessStateIncorpId']
+Pardot_businessStartDate_xpath=//input[@formcontrolname='businessStartDate']
+Pardot_naicsCode_xpath=//input[@formcontrolname='nacisCode']
+Pardot_businessProfile_Continue_xpath=//*[contains(text(),' Business Profile ')]//following::span[normalize-space(text())='Continue']
+Pardot_businessPhoneNo_xpath=//input[@formcontrolname='businessPhoneNo']
+Pardot_websiteUrl_xpath=//input[@formcontrolname='websiteUrl']
+Pardot_businessAddress_xpath=//input[@formcontrolname='businessAddress']
+Pardot_businessCity_xpath=//input[@formcontrolname='businessCity']
+Pardot_businessState_xpath=//mat-select[@formcontrolname='businessStateId']
+Pardot_businessAddressToggle_xpath=//*[@formcontrolname='sameBusinessAddress']
+Pardot_mailingAddress_continue_xpath=//*[contains(text(),'Mailing Address')]//following::span[normalize-space(text())='Continue']
+#Business Financials
+Pardot_priviousLoan_xpath=//mat-select[@formcontrolname='previousLoan']
+Pardot_priviousLoan_xpath=
+Pardot_priviousLoan_xpath=
+Pardot_priviousLoan_xpath=
+Pardot_priviousLoan_xpath=
+Pardot_priviousLoan_xpath=
+Pardot_priviousLoan_xpath=
+Pardot_priviousLoan_xpath=
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Form 2 <--Owner Details -->
+Lendistry_ownerAddress_xpath=//input[@formcontrolname='owner_address']
+Lendistry_ownerAddress2_xpath=//input[@formcontrolname='owner_address2']
+Lendistry_ownerCity_xpath=//input[@formcontrolname='owner_city']
+Lendistry_ownerState_xpath=//*[@formcontrolname='owner_state']
+Lendistry_ownerStateList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_ownerCountry_xpath=//*[@formcontrolname='owner_county']
+Lendistry_ownerCountryList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_ownerDOB_xpath=//input[@formcontrolname='owner_dob']
+Lendistry_ownerSSN_xpath=//input[@formcontrolname='owner_social_security']
+Lendistry_ownerShip_xpath=//input[@formcontrolname='owner_percentage']
+Lendistry_Iaccept_xpath=//input[@name='I accept the Terms and Conditions']//following-sibling::div[@class='mat-checkbox-frame']
+Lendistry_save_Agree_xpath=(//button[@class='btn-deafult btn-primary mat-button mat-primary'])[2]
+
+#Form 3 <-- Business information -->
+Lendistry_businessDBA_xpath=//input[@formcontrolname='business_ba']
+Lendistry_BusinessEIN_xpath=//input[@formcontrolname='business_ein']
+Lendistry_businessPhone_xpath=//input[@formcontrolname='business_phone']
+Lendistry_businessType_xpath=(//span[contains(text(),'Business Type')])[1]
+Lendistry_businessTypeList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_stateOfIncorporation_xpath=//mat-select[@formcontrolname='state_of_incopration']
+Lendistry_stateOfIncorporationList_xpath=//span[@class='mat-option-text']
+
+Lendistry_businessAddress_xpath=//input[@formcontrolname='business_address']
+Lendistry_businessAddress2_xpath=//input[@formcontrolname='business_address2']
+Lendistry_businessCity_xpath=//input[@formcontrolname='business_city']
+Lendistry_businessState_xpath=//mat-select[@formcontrolname='business_state']
+Lendistry_businessStateList_xpath=//span[@class='mat-option-text']
+Lendistry_businessCountry_xpath=//mat-select[@formcontrolname='business_county']
+Lendistry_businessCountryList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_businessZip_xpath=//input[@formcontrolname='business_zip']
+Lendistry_businessDateEstablished_xpath=//input[@formcontrolname='business_start_date']
+Lendistry_businessWebsiteURL_xpath=//input[@formcontrolname='business_website']
+
+#  <--How can we help you  -->
+Lendistry_purposeOfLoan_xpath=//mat-select[@formcontrolname='purposeOfLoan']
+Lendistry_PurposeOfLoanList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_amountRequest_xpath=//input[@formcontrolname='amountRequested']
+Lendistry_annualRevenue_xpath=//input[@formcontrolname='annualRevenue']
+Lendistry_createNewJob_xpath=//mat-select[@formcontrolname='createJobs']
+Lendistry_createNewJobList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_numberOfEmployees_xpath=//input[@formcontrolname='numberOfEmployees']
+Lendistry_numberOfPartTimeEmployees_xpath=//input[@formcontrolname='numberOfPartTimeEmployees']
+Lendistry_numOfNewJob_xpath=//input[@formcontrolname='noOfJobsCreated']
+Lendistry_numOfRetainedJob_xpath=//input[@formcontrolname='noOfJobRetained']
+
+#   <-- Business demographics  -->
+Lendistry_demographicsBusinessDo_xpath=//mat-select[@formcontrolname='what_business_do']
+Lendistry_demographicsBusinessDoList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_demographicsBusinessType_xpath=(//mat-select[@formcontrolname='business_type'])[2]
+Lendistry_demographicsBusinessTypeList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_tellUsMore_xpath=//mat-select[@formcontrolname='tell_us_more']
+Lendistry_tellUsMoreList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_NAICSCode_xpath=//input[@formcontrolname='naics_code']
+Lendistry_womenOwnedBusiness_xpath= //mat-select[@formcontrolname='woman_owned']
+Lendistry_womenOwnedBusinessList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_veteranOwnedBusiness_xpath=//mat-select[@formcontrolname='veteran']
+Lendistry_veteranOwnedBusinessList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_disabled_xpath= //mat-select[@formcontrolname='disabled']
+Lendistry_disabledList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_race_xpath= //mat-select[@formcontrolname='race']
+Lendistry_raceList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_ethnicity_xpath=//mat-select[@formcontrolname='ethnicity']
+Lendistry_ethnicityList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_franchise_xpath=//mat-select[@formcontrolname='franchise']
+Lendistry_franchiseList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_rural_xpath=//mat-select[@formcontrolname='rural']
+Lendistry_ruralList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+
+#  <-- Disclosures  -->
+Lendistry_questionTitle_xpath=//*[@class='questionTitle']
+Lendistry_DisclosuresQ1_xpath=(//*[contains(text(),'Please select an answer')])[1]
+Lendistry_DisclosuresQ1List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_DisclosuresQ2_xpath=(//div[@class='flex'])[2]/mat-form-field//input
+Lendistry_DisclosuresQ3_xpath=(//div[@class='flex'])[3]/mat-form-field//input
+Lendistry_DisclosuresQ4_xpath=(//*[contains(text(),'Please select an answer')])[2]
+Lendistry_DisclosuresQ4List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_DisclosuresQ5_xpath=(//*[contains(text(),'Please select an answer')])[3]
+Lendistry_DisclosuresQ5List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_DisclosuresQ6_xpath=(//*[contains(text(),'Please select an answer')])[4]
+Lendistry_DisclosuresQ6List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_DisclosuresQ6_1_xpath=(//*[contains(text(),'Please select an answer')])[5]
+Lendistry_DisclosuresQ6_1List_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_DisclosuresQ6_2_xpath=//div[@class='depWrap ng-star-inserted']//mat-form-field//input
+
+Lendistry_SubmitButton_xpath=//span[contains(text(),'Submit')]
+Lendistry_SubmitForm_xpath=(//*[contains(text(),' Please select Yes or No ')])[1]
+Lendistry_SubmitFormList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_Save_continue_xpath=//*[contains(text(),'Save & Continue Later')]
+Lendistry_continue_xpath=(//*[contains(text(),'Continue')])[3]
+Lendistry_applicationStatus_xpath=//div[@class='thankyou_container ng-star-inserted']//span
+
+# <-- Complete your profile -->
+Lendistry_NetworkStatus_xpath=(//div[@class='box-body']//following::p)[2]
+Lendistry_editApplication_xpath=//span[contains(text(),'Edit Application')]
+
+Lendistry_uploadDocumentsBankInfo_xpath=//span[contains(text(),'Upload Documents & Bank Info')]
+
+Lendistry_taxExemptionLetter_xpath=//*[contains(text(),'Tax Exemption Letter')]
+Lendistry_applicationCertification_xpath=//*[starts-with(text(),'Application Certification')]
+Lendistry_governmentIssuedID_xpath=//*[starts-with(text(),'Government')]
+Lendistry_filed2019TaxReturns_xpath=//*[contains(text(),'Tax Return')]
+
+Lendistry_certificateofOrganization_xpath=//div[contains(text(),'Business License')]
+Lendistry_bankInfo_xpath=//a[contains(text(),'Bank Info')]
+Lendistry_taxExemptionLetterCheckbox_xpath=//div[contains(text(),'501(c)(19) Tax Exemption Letter')]//following::input
+Lendistry_filed2019TaxReturnsCheckBox_xpath=//div[contains(text(),'Tax Return')]//following::input
+Lendistry_certificateofOrganizationCheckBox_xpath=//div[contains(text(),'Business License')]//following::input
+# >> NYR <<  
+Lendistry_filed2020TaxReturns_xpath=//*[starts-with(text(),'2020 Business Tax Return')]
+Lendistry_proofOfBusinessLocation_xpath=//*[starts-with(text(),'Proof of Business Location')]
+Lendistry_NYS45_xpath=//*[starts-with(text(),'NYS 45')]
+Lendistry_IRSForm4506_xpath=//*[contains(text(),'IRS Form 4506')]
+Lendistry_proofOfBusinessOrg_xpath=//*[starts-with(text(),'Proof of Business Organization')]
+Lendistry_additionalsBusinessOwners_xpath=//*[starts-with(text(),'Additional Business Owners')]
+
+
+# >> upload file xpath >>
+Lendistry_browseFile_xpath=//input[@id='uploadDocument']
+Lendistry_uploadFile_xpath=//button[@class='btn-deafult btn-primary upload-link block mat-button']
+Lendistry_saveAndClose_xpath=//*[@class='material-icons notranslate' and text()=' save ']
+
+# >> Validation message <<
+Lendistry_ErrorFileSize_xpath=//div[@class='toast-message ng-star-inserted']
+Lendistry_statusComplete_xpath=//span[normalize-space(text())='COMPLETED']
+Lendistry_deleteFile_xpath=//*[@class='pointer notranslate mat-icon material-icons' and contains(text(),'delete')]
+Lendistry_deleteConfirmation_xpath=//*[@class='mat-button-wrapper' and contains(text(),'Yes')]
+
+# >> Bank info step 1 >>
+Lendistry_plaidFrame_xpath=//iframe[@id='plaid-link-iframe-1']
+Lendistry_linkYourBank_xpath=//*[text()='Link Your Bank']
+Lendistry_plaidContinue_xpath=//*[starts-with(@class,'Button-module') and text()='Continue']
+Lendistry_plaidBankOfAmerica_xpath=//*[starts-with(text(),'Bank of America')]//parent::*
+Lendistry_plaidUsename_xpath=//label[text()='Username'][contains(@class,'BaseInput')]/following::input
+Lendistry_plaidPassword_xpath=//label[text()='Password'][contains(@class,'BaseInput')]/following::input
+Lendistry_plaidSubmit_xpath=//*[text()='Submit']
+Lendistry_plaidPhone_xpath=//*[text()='Phone']//preceding::label
+Lendistry_plaidOTPCode_xpath=//label[text()='Code'][contains(@class,'BaseInput')]/following::input
+
+Lendistry_plaidAllow_xpath=//*[text()='Allow']
+
+# >> Bank info step 2 >>
+Lendistry_accountName_xpath=//input[@formcontrolname='accountName']
+Lendistry_bankName_xpath=//input[@formcontrolname='bankName']
+Lendistry_streetName_xpath=//input[@formcontrolname='street']
+Lendistry_cityName_xpath=//input[@formcontrolname='city']
+Lendistry_stateName_xpath=//mat-select[@formcontrolname='stateId']
+Lendistry_stateNameList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+Lendistry_zip_xpath=//input[@formcontrolname='zip']
+Lendistry_routingNumber_xpath=//input[@formcontrolname='routingNum']
+Lendistry_accountNumber_xpath=//input[@formcontrolname='accountNum']
+
+# >> Logout <<
+Lendistry_logOut_xpath=//*[contains(text(),'exit_to_app')]
+
+# >> Validation element <<
+Lendistry_sucessRostMessage_xpath=//*[@class='toast-message ng-star-inserted']
+Lendistry_matchEmailaddress_xpath=//*[@class='ng-invalid ng-dirty ng-touched']/div[2]//mat-error
+Lendistry_matchPhoneNo_xpath=//*[contains(text(),'Both cell number does not match.')]
+Lendistry_matchInvalidDOB_xpath=(//*[@class='mat-error ng-star-inserted'])[1]/span
+Lendistry_matchSSNno_xpath=(//*[@class='mat-error ng-star-inserted'])[2]/span
+Lendistry_matchOwnerPercentage_xpath=(//*[@class='mat-error ng-star-inserted'])[3]
+Lendistry_matchTermandCondition_xpath=//*[@class='mat-error ng-star-inserted']
+Lendistry_matchBusinessESTDate_xpath=//*[contains(text(),'Business Start Date cannot be a future Date.')]
+Lendistry_matchBusinessUrl_xpath=//*[contains(text(),' Invalid Business Website URL.')]
+EmptyMessage_DBA_Xpath=//*[contains(text(),'DBA should not be blank.')]
+EmptyMessage_BusinessEIN_Xpath=//*[contains(text(),'Business EIN should not be blank.')]
+EmptyMessage_BusinessPhone_Xpath=//*[contains(text(),'Business Phone should not be blank.')]
+EmptyMessage_BusinessType_Xpath=//*[contains(text(),'Please select a business type. ')]
+EmptyMessage_StateOfIncorporation_Xpath=//*[contains(text(),'Please select a State of Incorporation.')]
+EmptyMessage_BusinessAddress_Xpath=//*[contains(text(),'Business Address should not be blank.')]
+EmptyMessage_BusinessCity_Xpath=//*[contains(text(),'City should not be blank.')]
+EmptyMessage_BusinessState_Xpath=//*[contains(text(),'Please select a State.')]
+EmptyMessage_BusinessCounty_Xpath=//*[contains(text(),' Please select a county. ')]
+EmptyMessage_BusinessZip_Xpath=//*[contains(text(),'Zip should not be blank.')]
+EmptyMessage_BusinessUrl_Xpath=//*[contains(text(),' Business Website URL should not be blank. ')]
+EmptyMessage_PurposeOfGrant_Xpath=//*[contains(text(),'Please select a purpose for the grant.')]
+EmptyMessage_AmountRequested_Xpath=//*[contains(text(),'Amount Requested should not be blank.')]
+EmptyMessage_EligibilityAmount_Xpath=//*[contains(text(),'Estimated grant eligibility amount should not be blank.')]
+EmptyMessage_AnnualGrossRecpt_Xpath=//*[contains(text(),'Annual Business Revenue should not be blank.')]
+EmptyMessage_GrantCreateJob_Xpath=//*[contains(text(),'Please select option.')]
+EmptyMessage_WhatBusinessDo_Xpath=(//*[normalize-space(text())='Please select an option.'])[1]
+EmptyMessage_BusinessType_Xpath=//*[normalize-space(text())='Please select "What does your business do?".']
+EmptyMessage_TellUsMore_Xpath=//*[normalize-space(text())='What is your type of business?.']
+EmptyMessage_NAICSCode_Xpath=//*[normalize-space(text())='NAICS Code should not be blank.']
+EmptyMessage_WomenOwnBusiness_Xpath=(//*[contains(text(),'Please select an option.')])[1]
+EmptyMessage_VeteranOwnBusiness_Xpath=(//*[contains(text(),'Please select an option.')])[2]
+EmptyMessage_Disabled_Xpath=(//*[contains(text(),'Please select an option.')])[3]
+EmptyMessage_Race_Xpath=(//*[contains(text(),'Please select an option.')])[4]
+EmptyMessage_Ethnicity_Xpath=(//*[contains(text(),'Please select an option.')])[5]
+EmptyMessage_Franchise_Xpath=(//*[contains(text(),'Please select an option.')])[6]
+EmptyMessage_Rural_Xpath=(//*[contains(text(),'Please select an option.')])[7]
+EmptyMessage_Q2_Xpath=(//div[@class='flex'])[2]/mat-form-field//mat-label
+EmptyMessage_Q3_Xpath=(//div[@class='flex'])[3]/mat-form-field//mat-label
+EmptyMessage_Q6_2_Xpath=(//div[@class='depWrap ng-star-inserted']//mat-form-field//mat-label)[2]
+ValidateMsg_AmountRequested_Xpath=//*[contains(text(),'Amount Requested should be between $5,000.00 to $25,000.00.')]
+ValidateMsg_NAICScode_Xpath=//*[normalize-space(text())='NAICS Code should have 6 digits (e.g. 999999)']
+
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+#											NYR- PORTAL
+#-------------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------
+
+NYR_applyNow_xpath=//*[text()='Apply Now']
+NYR_referralPartner_xpath=//*[@formcontrolname='tenantReferralPartnerMasterId']
+NYR_globalDropDownList_xpath=//div[@class='mat-select-content ng-trigger ng-trigger-fadeInContent']//span
+NYR_preferredLanguage_xpath=//*[@formcontrolname='preferredLanguageMasterId']
+
+NYR_DiscloserQ1_xpath=//*[starts-with(@name,'As of the date of the application')]
+NYR_DiscloserQ2_xpath=//*[starts-with(@name,'Is your business organized as For-Profit Business')]
+NYR_DiscloserQ3_xpath=//*[starts-with(@name,'Are you in substantial compliance with applicable federal')]
+NYR_DiscloserQ4_xpath=//*[starts-with(@name,'Do you owe any federal, state, or local taxes')]
+NYR_DiscloserQ5_xpath=//*[starts-with(@name,'Is your business in the For-Profit Independent')]
+NYR_DiscloserQ5.1_xpath=//*[contains(@name,'Is your business an independently')]
+NYR_DiscloserQ5.2_xpath=//*[contains(@name,'Is your business primarily engaged in the fields')]
+NYR_DiscloserQ5.3_xpath=//*[contains(@name,'Is a majority of your business involved')]
+NYR_DiscloserQ5.4_xpath=//*[contains(@name,'Do you have one hundred or less full-time')]
+NYR_DiscloserQ6_xpath=//*[starts-with(@name,'Are you Service-Disabled Veteran Owned Business')]
+NYR_DiscloserQ7_xpath=//*[starts-with(@name,'Is your business set-up as a worker cooperativ')]
+NYR_DiscloserQ8_xpath=//*[starts-with(@name,'Is greater than 50% of the small business owned by socially')]
+NYR_DiscloserQ9_xpath=//*[starts-with(@name,'Annual gross receipts for 2019? (this should match your tax return')]
+NYR_DiscloserQ10_xpath=//*[starts-with(@name,'Annual gross receipts for 2020')]
+NYR_DiscloserQ11_xpath=//*[starts-with(@name,'How many months were you in operation')]
+NYR_DiscloserQ12_xpath=//*[starts-with(@name,'During COVID-19 Pandemic')]
+NYR_DiscloserQ12.1_xpath=//*[starts-with(@name,'If YES, did you receive funds for Paycheck Protection Program')]
+NYR_DiscloserQ12.2_xpath=(//*[starts-with(@name,'If YES, how much? If No, enter 0 (zero)')])[1]
+NYR_DiscloserQ12.3_xpath=//*[starts-with(@name,'If YES, did you receive funds for COVID-19 EIDL Advance Grant')]
+NYR_DiscloserQ12.4_xpath=(//*[starts-with(@name,'If YES, how much? If No, enter 0 (zero)')])[2]
+NYR_DiscloserQ12.5_xpath=//*[starts-with(@name,'If YES, did you receive funds for COVID-19 EIDL Supplemental Targeted Advance Grant')]
+NYR_DiscloserQ12.6_xpath=(//*[starts-with(@name,'If YES, how much? If No, enter 0 (zero)')])[3]
+NYR_DiscloserQ12.7_xpath=//*[starts-with(@name,'If YES, did you receive funds for SBA Shuttered Venue Operators Grant')]
+NYR_DiscloserQ12.8_xpath=(//*[starts-with(@name,'If YES, how much? If No, enter 0 (zero)')])[4]
+NYR_DiscloserQ12.9_xpath=//*[starts-with(@name,'SBA Restaurant Revitalization Grant')]
+NYR_DiscloserQ12.10_xpath=//*[starts-with(@name,'Other COVID-19 related emergency Funding')]
+NYR_DiscloserQ12.11_xpath=(//*[starts-with(@name,'If YES, how much? If No, enter 0 (zero)')])[5]
+NYR_DiscloserQ13_xpath=//*[starts-with(@name,'Did you receive any help or support from a NYS')]
+NYR_DiscloserQ13.1_xpath=//*[starts-with(@name,'If YES, provide TA provider')]
+NYR_DiscloserQ14_xpath=//*[starts-with(@name,'Did you receive any help or support from an Entrepreneurship')]
+NYR_DiscloserQ14.1_xpath=//*[starts-with(@name,'If YES, provide EAC provider')]
+NYR_DiscloserQ15_xpath=//*[starts-with(@name,'Did you receive any help or support from a Community Development Financial Institution (CDFI)')]
+NYR_DiscloserQ15.1_xpath=//*[starts-with(@name,'If YES, provide CDFI provider')]
+NYR_DiscloserQ16_xpath=//*[starts-with(@name,'Did you receive any help or support from a Chamber of Commerce')]
+NYR_DiscloserQ17_xpath=//*[starts-with(@name,'Did you receive any help or support from a Small Business Development Center (SBDC)')]
+NYR_DiscloserQ18_xpath=//*[starts-with(@name,'Is your business currently in need of technical assistance support or help')]
+NYR_DiscloserQ19_xpath=//*[starts-with(@name,'Is your business currently in need of a loan')]
+
+
+
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lendistry Scenarios" parallel="tests"
+	thread-count="8">
+
+<!-- 	<listeners>
+		<listener
+			class-name="com.Automation.reports.AnnotationTransformer" />
+	</listeners> -->
+
+	<test name="Lendistry Lending test NYR Module_1" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class name="LendistryLending.TC001_LL_InviteToPortal" />
+
+		</classes>
+	</test>
+	
+
+</suite> <!-- Suite -->
+
+

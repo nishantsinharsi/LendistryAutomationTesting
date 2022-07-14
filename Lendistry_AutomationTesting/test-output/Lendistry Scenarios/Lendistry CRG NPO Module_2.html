@@ -1,0 +1,422 @@
+<html>
+<head>
+<title>TestNG:  Lendistry CRG NPO Module_2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Lendistry CRG NPO Module_2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 13 22:09:49 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>905 seconds (905726 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRGNonProfit.TC009_NPO_CRG_NonProfitIncomplete.testB()'><b>testB</b><br>Test class: CRGNonProfit.TC009_NPO_CRG_NonProfitIncomplete<br>Parameters: {Q5=836227, Q4=353802, Q3=Yes, Owner_City=Anthill, Q2=Yes, Q1=Yes, Race=White, Mode=NPOs, FirstName=Marisol L, Status=INCOMPLETE FILE, DPassword=Nishant@123#, Disabled=No, Ethnicity=Not Disclosed, Bussiness It=Textile, Annual revenue=2500879, NAICS=226668, MobileNo=700-455-7089, BusinessName=Lendistry, Grant Type=Payroll, Full time employess=20976, Owner_Address=220, Locust Ave, Zip Code=65488, Sumit application=No, EIN=000000001, Organization service=Childcare, Part time employee=34536, Owner_Address2=220, Locust Ave, Job created=40715, Q6.2=788878, Q6.1=SBA PPP, SSN=000000001, Network Status Awaiting=Awaiting Selection Process, Yes=Yes, ownerPercentage=10.0, Rural=Yes, Franchise=Yes, Website=none.com, Runmode=Y, Country=Adair County, BussinessType=Non Profit, State=Missouri, Date=12/23/1992, Complet Application=Yes, Bussiness Do=Manufacturer, Jobs retained=203, Tell us more=Knitting Mill, Request amount=25000, Non profit status=501(c)(3), Women owned=No, LastName=Test case, Veteran owned=Yes, Browser=Chrome, Q6=Yes}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC009_NPO_CRG_NonProfitIncomplete.testB(TC009_NPO_CRG_NonProfitIncomplete.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Lendistry username and password&apos;)]&quot;}
+  (Session info: headless chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 631da6e4d9626fde58ae066b85e93789
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Lendistry username and password&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace208371151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace208371151'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC009_NPO_CRG_NonProfitIncomplete.testB(TC009_NPO_CRG_NonProfitIncomplete.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Lendistry username and password&apos;)]&quot;}
+  (Session info: headless chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 631da6e4d9626fde58ae066b85e93789
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Lendistry username and password&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+</pre></div></td>
+<td>542</td>
+<td>CRGNonProfit.TC009_NPO_CRG_NonProfitIncomplete@730d2164</td></tr>
+<tr>
+<td title='CRGNonProfit.TC012_NPO_UW_DocUploadToCloseDoc.testB()'><b>testB</b><br>Test class: CRGNonProfit.TC012_NPO_UW_DocUploadToCloseDoc<br>Parameters: {Upload txt=testfile.txt, File Type=2019 Business Tax Return, Runmode=Y, UW Username=uwteamlead@yopmail.com, Email Text=Lendistry CRG Closing Team sent you a document to review and sign., Mode=NPOs, Browser=Chrome, UW Password=test@123, Upload pdf=testpdf.pdf}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC012_NPO_UW_DocUploadToCloseDoc.testB(TC012_NPO_UW_DocUploadToCloseDoc.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at com.Automation.Keywords.GenericKeywords.enterDIR(GenericKeywords.java:364)
+	at com.Automation.Keywords.GenericKeywords.executeUnderWriter(GenericKeywords.java:421)
+	at com.Automation.Keywords.GenericKeywords.loginToUnderWriter(GenericKeywords.java:428)
+	... 28 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace148190625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace148190625'><pre>java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC012_NPO_UW_DocUploadToCloseDoc.testB(TC012_NPO_UW_DocUploadToCloseDoc.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NullPointerException
+	at com.Automation.Keywords.GenericKeywords.enterDIR(GenericKeywords.java:364)
+	at com.Automation.Keywords.GenericKeywords.executeUnderWriter(GenericKeywords.java:421)
+	at com.Automation.Keywords.GenericKeywords.loginToUnderWriter(GenericKeywords.java:428)
+	... 28 more
+</pre></div></td>
+<td>18</td>
+<td>CRGNonProfit.TC012_NPO_UW_DocUploadToCloseDoc@5c86dbc5</td></tr>
+<tr>
+<td title='CRGNonProfit.TC013_NPO_SF_ConvertExistingLead.testB()'><b>testB</b><br>Test class: CRGNonProfit.TC013_NPO_SF_ConvertExistingLead<br>Parameters: {MiddleName=Test, Existing Lead=Lendistry Sales, Company=Lendistry, Runmode=Y, Unqualified Reason=Unresponsive, Phone=700-455-7089, Lead status=Unqualified, InCorrectPhone=7004557089, Salutation=Mr., LastName=case, FirstName=Marisol L, Mode=NPOs, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC013_NPO_SF_ConvertExistingLead.testB(TC013_NPO_SF_ConvertExistingLead.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//*[@class=&apos;bodyConvertedItem&apos;])[3]//a)[1]&quot;}
+  (Session info: headless chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bbcc7ea59b15bfd0e4de6d9e91441b5
+*** Element info: {Using=xpath, value=((//*[@class=&apos;bodyConvertedItem&apos;])[3]//a)[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295907844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295907844'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC013_NPO_SF_ConvertExistingLead.testB(TC013_NPO_SF_ConvertExistingLead.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;((//*[@class=&apos;bodyConvertedItem&apos;])[3]//a)[1]&quot;}
+  (Session info: headless chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bbcc7ea59b15bfd0e4de6d9e91441b5
+*** Element info: {Using=xpath, value=((//*[@class=&apos;bodyConvertedItem&apos;])[3]//a)[1]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor53.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+</pre></div></td>
+<td>269</td>
+<td>CRGNonProfit.TC013_NPO_SF_ConvertExistingLead@461ad730</td></tr>
+<tr>
+<td title='CRGNonProfit.TC010_NPO_CRG_NetworkSelection.testB()'><b>testB</b><br>Test class: CRGNonProfit.TC010_NPO_CRG_NetworkSelection<br>Parameters: {Browser=Chrome, Application Status=Incomplete, Network Selection=Approved, NYC Hold=NYC Hold, DPassword=Nishant@123#, SN CRG Approve=CRG Approved, SN Waitlist=CRG Waitlist, CRG NPO Hold=CRG NPO Hold, Select Network ALC=Approved - Lackawanna County, SN Not Selected=Not Selected, Runmode=Y, CRG AC NPO Hold=CRG AC NPO Hold, Sumit application=Yes, SN PA Cares=Waitlist- PA Cares, Inactive Status=Inactive, SN Inactive=CRG Inactive, Select Network HFNR=Hold for next round, SN NPO Inactive=CRG NPO Inactive, SN CRG Not Select=CRG Not Selected, CRG AC NPO Inactive=CRG AC NPO Inactive, CRG Hold=CRG Hold, Select Network None=--None--, Select Network AAC=Approved- Allegheny County, Decline Status=Your application was not selected, In Review=In Review, Pending Validations, NYC Inactive=NYC Inactive, Mode=NPOs, Waitlist Status=Currently on the Waitlist, Select Network APC=Approved- Philadelphia County, SN Approved=Approved, SN YOCO=YOCO-Waitlist, Select Network Decline=Declined, Network Status Awaiting=Awaiting Selection Process}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC010_NPO_CRG_NetworkSelection.testB(TC010_NPO_CRG_NetworkSelection.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.framework.exception.FrameworkException: ERROR: please check locator: null
+	at com.Automation.Keywords.GenericKeywords.drawBorder(GenericKeywords.java:2058)
+	at com.Automation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1897)
+	at com.Automation.Keywords.GenericKeywords.loginToPortal(GenericKeywords.java:1124)
+	... 28 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384593366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384593366'><pre>java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC010_NPO_CRG_NetworkSelection.testB(TC010_NPO_CRG_NetworkSelection.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.framework.exception.FrameworkException: ERROR: please check locator: null
+	at com.Automation.Keywords.GenericKeywords.drawBorder(GenericKeywords.java:2058)
+	at com.Automation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1897)
+	at com.Automation.Keywords.GenericKeywords.loginToPortal(GenericKeywords.java:1124)
+	... 28 more
+</pre></div></td>
+<td>25</td>
+<td>CRGNonProfit.TC010_NPO_CRG_NetworkSelection@24959ca4</td></tr>
+<tr>
+<td title='CRGNonProfit.TC011_NPO_CRG_DocUpload.testB()'><b>testB</b><br>Test class: CRGNonProfit.TC011_NPO_CRG_DocUpload<br>Parameters: {Browser=Chrome, Owner_City=Anthill, Password=Lendistry2021, Doc Min=testfile.txt, Zip=5.0, Doc Max=testpdf15mb.pdf, Account Number=10.0, Doc1 Percentage=20, DPassword=Nishant@123#, Routing Number=9.0, Doc2 Percentage=40, UserName=sfdevops@lendistry.com.UAT, State=Missouri, Runmode=Y, Doc3 Percentage=60, BusinessName=Lendistry, Doc4 Percentage=80, Mode=NPOs, Owner_Address=220, Locust Ave, Doc5 Percentage=100, Bank name=RBL bank}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC011_NPO_CRG_DocUpload.testB(TC011_NPO_CRG_DocUpload.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.framework.exception.FrameworkException: ERROR: please check locator: null
+	at com.Automation.Keywords.GenericKeywords.drawBorder(GenericKeywords.java:2058)
+	at com.Automation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1897)
+	at com.Automation.Keywords.GenericKeywords.loginToPortal(GenericKeywords.java:1124)
+	... 28 more
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1911209062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911209062'><pre>java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at CRGNonProfit.TC011_NPO_CRG_DocUpload.testB(TC011_NPO_CRG_DocUpload.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.framework.exception.FrameworkException: ERROR: please check locator: null
+	at com.Automation.Keywords.GenericKeywords.drawBorder(GenericKeywords.java:2058)
+	at com.Automation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1897)
+	at com.Automation.Keywords.GenericKeywords.loginToPortal(GenericKeywords.java:1124)
+	... 28 more
+</pre></div></td>
+<td>44</td>
+<td>CRGNonProfit.TC011_NPO_CRG_DocUpload@10289886</td></tr>
+</table><p>
+</body>
+</html>

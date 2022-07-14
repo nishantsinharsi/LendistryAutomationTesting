@@ -1,0 +1,40 @@
+package DBTransaction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+
+	public static void main(String[] args) {
+		copyEmailPassword();
+
+	}
+
+	public static synchronized void copyEmailPassword() {
+
+		String str = "New username and temporary password:\r\n" + "\r\n" + "Username: test080722489179@yopmail.com\r\n"
+				+ "Temporary Password: hpMqlq5kgk.";
+
+		// System.out.println(str);
+
+		String[] ss= str.split(":");
+		
+
+		List<String> list = new ArrayList<String>();
+		
+		for (int i = 0; i < ss.length; i++) {
+			list.add(ss[i]);
+		}
+
+		
+		
+		list.add(ss);
+
+		for (int i = 0; i < list.size(); i++) {
+
+			System.out.println("*" + list.get(i));
+		}
+
+	}
+
+}

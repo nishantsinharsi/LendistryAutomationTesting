@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>TestNG:  Lendistry NYR Module_2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Lendistry NYR Module_2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 14 11:23:11 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2193 seconds (2193099 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LendistryNYR.TC014_NYR_Portal_ComponentSuit.testB()'><b>testB</b><br>Test class: LendistryNYR.TC014_NYR_Portal_ComponentSuit<br>Parameters: {Browser=Chrome, Mode.Number=Number, Mode.Email=Email, Refferal Partner=ACCORD Corporation, DOB=12/13/1990, DOB < 18=01/02/2022, Mode.Length=Length, Country=Butler County, Email2=test1234@yopmailcom, Email1=test1234yopmail.com, ownerPercent >100=101, Zip Code>5=123456, Prefeered Language=English, SSN < 9=12345678, State=Alabama, Runmode=Y, SSN > 9=1234567890, Sumit application=Yes, LastName=Test case Test case Test case Test case Test case Test case, Phone<10=700-455-508, FirstName=Marisol L Marisol L Marisol L Marisol L Marisol, BusinessName=Lendistry, Mode.Phone=Phone, Phone>10=700-455-70890, Address=California Association California Association California, Zip Code<5=1234, Mode=NYRCSuit, DOB invalid=01/01/19, ownerPercentage=10, Zip Code=65488, alphabet=one-two-four, BusinessName1=Lendistry Lendistry Lendistry Lendistry Lendistry Lendistry Lendistry Lendistry Lendistry Lendistry Lendistry}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at LendistryNYR.TC014_NYR_Portal_ComponentSuit.testB(TC014_NYR_Portal_ComponentSuit.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;toast-message ng-star-inserted&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6fb2260dc580d8d76f7e884f11fdc13
+*** Element info: {Using=xpath, value=//*[@class=&apos;toast-message ng-star-inserted&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.messageValidator(GenericKeywords.java:1673)
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace575175992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace575175992'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at LendistryNYR.TC014_NYR_Portal_ComponentSuit.testB(TC014_NYR_Portal_ComponentSuit.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;toast-message ng-star-inserted&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d6fb2260dc580d8d76f7e884f11fdc13
+*** Element info: {Using=xpath, value=//*[@class=&apos;toast-message ng-star-inserted&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.messageValidator(GenericKeywords.java:1673)
+	... 27 more
+</pre></div></td>
+<td>201</td>
+<td>LendistryNYR.TC014_NYR_Portal_ComponentSuit@4ef74c30</td></tr>
+<tr>
+<td title='LendistryNYR.TC013_NYR_SF_ConvertExistingLead.testB()'><b>testB</b><br>Test class: LendistryNYR.TC013_NYR_SF_ConvertExistingLead<br>Parameters: {MiddleName=Test, Existing Lead=Lendistry Sales, Company=Lendistry, Runmode=Y, Unqualified Reason=Unresponsive, Phone=700-455-7089, Lead status=Unqualified, InCorrectPhone=7004557089, Salutation=Mr., LastName=case, FirstName=Marisol L, Mode=NYRPortals, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at LendistryNYR.TC013_NYR_SF_ConvertExistingLead.testB(TC013_NYR_SF_ConvertExistingLead.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;New&apos; and @title=&apos;New&apos;]//parent::a&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d738694d053339a64d7502d9593f8aab
+*** Element info: {Using=xpath, value=//*[text()=&apos;New&apos; and @title=&apos;New&apos;]//parent::a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1062849687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1062849687'><pre>java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.Automation.Driver.DriverScript.executeKeywords(DriverScript.java:55)
+	at LendistryNYR.TC013_NYR_SF_ConvertExistingLead.testB(TC013_NYR_SF_ConvertExistingLead.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;New&apos; and @title=&apos;New&apos;]//parent::a&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;C40LAP-12601&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\NISHAN~1.SIN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d738694d053339a64d7502d9593f8aab
+*** Element info: {Using=xpath, value=//*[text()=&apos;New&apos; and @title=&apos;New&apos;]//parent::a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Automation.Keywords.SeleniumFunctions.findElement(SeleniumFunctions.java:71)
+	at com.Automation.Keywords.GenericKeywords.retryingElement(GenericKeywords.java:198)
+	at com.Automation.Keywords.GenericKeywords.click(GenericKeywords.java:209)
+	... 27 more
+</pre></div></td>
+<td>261</td>
+<td>LendistryNYR.TC013_NYR_SF_ConvertExistingLead@3e62d773</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LendistryNYR.TC009_NYR_IncompletePortal.testB()'><b>testB</b><br>Test class: LendistryNYR.TC009_NYR_IncompletePortal<br>Parameters: {Q5=No, Q4=Yes, Q19=Yes, Q3=Yes, Owner_City=Anthill, Q18=Yes, Q2=Yes, Q17=Yes, Q1=Yes, Q16=Yes, Race=White, Mode=NYRPortals, Q15=No, FirstName=Marisol L, Q14=No, Status=INCOMPLETE FILE, Q13=No, Q12=No, Refferal Partner=ACCORD Corporation, Q11=5, Disabled=No, Q10=543567, Ethnicity=Not Disclosed, Bussiness It=Textile, Annual revenue=2500879, NAICS=226668, MobileNo=700-455-7089, BusinessName=Lendistry, Grant Type=Payroll Costs, Full time employess=20976, Owner_Address=220, Locust Ave, Zip Code=65488, Network Status=Incomplete, Sumit application=No, EIN=000000001, Part time employee=34536, Owner_Address2=220, Locust Ave, Job created=40715, SSN=000000001, Network Status Awaiting=Awaiting Selection Process, Yes=Yes, ownerPercentage=10.0, Franchise=Yes, MinorityOwned=Yes, Prefeered Language=English, Website=none.com, Runmode=Y, Country=Adair County, BussinessType=Partnership, State=Missouri, Date=12/23/1992, Complet Application=Yes, Bussiness Do=Manufacturer, Jobs retained=203, Tell us more=Knitting Mill, Request amount=25000, Women owned=No, LastName=Test case, Q9=354567, Q8=Yes, Q7=Yes, Veteran owned=Yes, Browser=Chrome, Q6=Yes}</td>
+<td></td>
+<td>418</td>
+<td>LendistryNYR.TC009_NYR_IncompletePortal@7d61eb55</td></tr>
+<tr>
+<td title='LendistryNYR.TC011_NYR_Portal_DocUpload.testB()'><b>testB</b><br>Test class: LendistryNYR.TC011_NYR_Portal_DocUpload<br>Parameters: {Doc9 Percentage=100, Owner_City=Anthill, Browser=Chrome, Doc Min=testfile.txt, Zip=5.0, Doc Max=testpdf15mb.pdf, Account Number=10.0, Doc1 Percentage=11, DPassword=Nishant@123#, Routing Number=9.0, Doc2 Percentage=22, State=Missouri, Runmode=Y, Doc6 Percentage=66, Doc3 Percentage=33, Doc7 Percentage=77, BusinessName=Lendistry, Doc4 Percentage=44, Mode=NYRPortals, Doc8 Percentage=88, Owner_Address=220, Locust Ave, Doc5 Percentage=55, Bank name=RBL bank}</td>
+<td></td>
+<td>754</td>
+<td>LendistryNYR.TC011_NYR_Portal_DocUpload@6c7a164b</td></tr>
+<tr>
+<td title='LendistryNYR.TC012_NYR_UW_DocUploadToCloseDoc.testB()'><b>testB</b><br>Test class: LendistryNYR.TC012_NYR_UW_DocUploadToCloseDoc<br>Parameters: {Browser=Chrome, Upload pdf=testpdf.pdf, Email Text= Lendistry NYR Closing Team sent you a document to review and sign., UW Password=test@123, Zip=65488, County=Adair County, UW Username=uwteamlead@yopmail.com, EIN No=1, Website Address=none.com, Grant Amount=$25,000, Business Start Date=1992-12-23, State=Missouri, Runmode=Y, Business Phone=700-455-7089, Business Entity=Partnership, File Type=2019 Business Tax Return, Mode=NYRPortals, Business Name=Lendistry, Address=220, Locust Ave, Upload txt=testfile.txt, NAICS Code=226668, City=Anthill}</td>
+<td></td>
+<td>308</td>
+<td>LendistryNYR.TC012_NYR_UW_DocUploadToCloseDoc@4c2bb6e0</td></tr>
+<tr>
+<td title='LendistryNYR.TC010_NYR_NetworkSelection.testB()'><b>testB</b><br>Test class: LendistryNYR.TC010_NYR_NetworkSelection<br>Parameters: {NYR Inactive=NYR Inactive, DPassword=Nishant@123#, NYR Approved=NYR Approved, NYR Hold=NYR Hold, NYR Not Selected=NYR Not Selected, In Review=In Review, Pending Validations, Select Network None=--None--, Runmode=Y, Decline Status=Your application was not selected, Not Selected=Not Selected, Inactive Status=Inactive, Waitlist Status=Currently on the Waitlist, Mode=NYRPortals, Browser=Chrome, NYR Waitlist=NYR Waitlist, Network Status Awaiting=Awaiting Selection Process}</td>
+<td></td>
+<td>245</td>
+<td>LendistryNYR.TC010_NYR_NetworkSelection@222a59e6</td></tr>
+</table><p>
+</body>
+</html>

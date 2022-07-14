@@ -1,0 +1,29 @@
+
+ƒ
+java:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(³Î©¯Hâ¿RMAJORZ
+CODE_SMELL
+Y
+java:S1125L"'Remove the unnecessary boolean literal.(§£Â‹ıÿÿÿÿHõ¿RMINORZ
+CODE_SMELL
+~	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(âì“şÿÿÿÿ8Ùİ˜ùš0HéîRMAJORZ
+CODE_SMELL
+„	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¶‹Ò8µ‡¡ùš0HÀïRMINORZ
+CODE_SMELL
+ƒ
+java:S1149R"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(×ÈíüHá¿RMAJORZ
+CODE_SMELL
+m	java:S125o"<This block of commented-out lines of code should be removed.(Ë¨š…øÿÿÿÿHû¿RMAJORZ
+CODE_SMELL
+Y
+java:S1125L"'Remove the unnecessary boolean literal.(§£Â‹ıÿÿÿÿHø¿RMINORZ
+CODE_SMELL
+y	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(³Î©¯8ö¨£ùš0HáïRMAJORZ
+CODE_SMELL
+†
+java:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ÈíüH×¿RMINORZ
+CODE_SMELL
+”
+java:S1319"gThe type of "testdata" should be an interface such as "Map" rather than the implementation "Hashtable".(³Î©¯HÙ¿RMINORZ
+CODE_SMELL
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£€˜ıÿÿÿÿHà¿RMINORZ
+CODE_SMELL

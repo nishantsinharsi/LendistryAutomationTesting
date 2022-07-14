@@ -1,0 +1,29 @@
+package DBTransaction;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Test {
+
+	public static void main(String[] args) {
+		copyEmailPassword();
+
+	}
+
+	public static synchronized void copyEmailPassword() {
+
+
+	
+		String mysourcestring = "developer is : development";
+		String substring = mysourcestring.substring(4,mysourcestring.indexOf(":"));
+
+		
+System.out.println(substring);
+		
+		
+
+	}
+
+}

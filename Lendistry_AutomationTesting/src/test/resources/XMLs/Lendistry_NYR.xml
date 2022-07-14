@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lendistry Scenarios" parallel="tests"
+	thread-count="8">
+
+	<!-- parallel="classes" thread-count="3" -->
+	<listeners>
+		<listener
+			class-name="com.Automation.reports.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Lendistry test NYR Module_1" preserve-order="true"
+		enabled="false">
+		<classes>
+			<class name="LendistryNYR.TC001_NYRPortal" />
+			<class name="LendistryNYR.TC002_NYR_SF_LeadVerification" />
+			<class name="LendistryNYR.TC003_NYR_SF_EditLead" />
+			<class name="LendistryNYR.TC004_NYR_SF_convertLeadToOpp" />
+			<class name="LendistryNYR.TC005_NYR_SF_EditUWToOpps" />
+			<class name="LendistryNYR.TC006_NYR_SF_ODSSVerification" />
+			<class name="LendistryNYR.TC007_NYR_LinkToBank" />
+			<class name="LendistryNYR.TC008_NYR_UW_BankStmtSummary" />
+			<class name="LendistryNYR.TC009_NYR_IncompletePortal" />
+			<class name="LendistryNYR.TC010_NYR_NetworkSelection" />
+			<class name="LendistryNYR.TC011_NYR_Portal_DocUpload" />
+		</classes>
+	</test>	
+	<test name="Lendistry test NYR Module_2" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class name="LendistryNYR.TC009_NYR_IncompletePortal" />
+			 <class name="LendistryNYR.TC010_NYR_NetworkSelection" />
+			<class name="LendistryNYR.TC011_NYR_Portal_DocUpload" />
+			<class name="LendistryNYR.TC012_NYR_UW_DocUploadToCloseDoc" />		
+			<class name="LendistryNYR.TC013_NYR_SF_ConvertExistingLead" />
+		</classes>
+	</test>
+	
+</suite> <!-- Suite -->
+
+

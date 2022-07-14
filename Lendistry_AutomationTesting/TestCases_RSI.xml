@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Generic framwork">
+
+	<!-- <listeners> <listener class-name="com.Automation.reports.AnnotationTransformer" 
+		/> </listeners> -->
+
+	<suite-files>
+		<suite-file
+			path="./src/test/resources/XMLs/Lendistry_CRG.xml" />
+			
+		<!-- <suite-file path="./src/test/resources/XMLs/Lendistry_NYR.xml" /> -->
+		<!-- <suite-file
+			path="./src/test/resources/XMLs/LendistryLending.xml" /> -->
+
+
+	</suite-files>
+</suite> 

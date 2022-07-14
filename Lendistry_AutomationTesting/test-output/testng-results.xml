@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-14T14:09:14 IST" name="Default suite" finished-at="2022-07-14T14:11:10 IST" duration-ms="116342">
+    <groups>
+    </groups>
+    <test started-at="2022-07-14T14:09:14 IST" name="Default test" finished-at="2022-07-14T14:11:10 IST" duration-ms="116342">
+      <class name="CRGForProfit.TC008_UW_BankStmtSummary">
+        <test-method is-config="true" signature="intit()[pri:0, instance:CRGForProfit.TC008_UW_BankStmtSummary@6e535154]" started-at="2022-07-14T14:09:14 IST" name="intit" finished-at="2022-07-14T14:09:15 IST" duration-ms="1404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intit -->
+        <test-method is-config="true" signature="initTest()[pri:0, instance:CRGForProfit.TC008_UW_BankStmtSummary@6e535154]" started-at="2022-07-14T14:09:16 IST" name="initTest" finished-at="2022-07-14T14:09:16 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method signature="testB(java.util.Hashtable)[pri:0, instance:CRGForProfit.TC008_UW_BankStmtSummary@6e535154]" started-at="2022-07-14T14:09:16 IST" name="testB" data-provider="getData" finished-at="2022-07-14T14:11:10 IST" duration-ms="114094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ApproveIndex=#385806, Bank name=RBL bank, Zip=12345, BusinessName=Lendistry, Runmode=Y, Owner_City=Anthill, UW Username=uwteamlead@yopmail.com, Routing Number=123456789, Owner_Address=220, Locust Ave, State=Missouri, Mode=ForProfit, Browser=Chrome, UW Password=test@123, Account Number=1234567890}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:CRGForProfit.TC008_UW_BankStmtSummary@6e535154]" started-at="2022-07-14T14:11:10 IST" name="quit" finished-at="2022-07-14T14:11:10 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="reportCleanUp(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:CRGForProfit.TC008_UW_BankStmtSummary@6e535154]" started-at="2022-07-14T14:11:10 IST" name="reportCleanUp" finished-at="2022-07-14T14:11:10 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void CRGForProfit.TC008_UW_BankStmtSummary.testB(java.util.Hashtable) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=testB status=SUCCESS method=TC008_UW_BankStmtSummary.testB(java.util.Hashtable)[pri:0, instance:CRGForProfit.TC008_UW_BankStmtSummary@6e535154] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportCleanUp -->
+      </class> <!-- CRGForProfit.TC008_UW_BankStmtSummary -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

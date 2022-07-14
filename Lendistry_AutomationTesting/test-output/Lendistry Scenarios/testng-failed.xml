@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Lendistry Scenarios]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Lendistry CRG profit Module_2(failed)">
+    <classes>
+      <class name="CRGForProfit.TC010_CRG_NetworkSelection">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CRGForProfit.TC010_CRG_NetworkSelection -->
+      <class name="CRGForProfit.TC013_SF_ConvertExistingLead">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- CRGForProfit.TC013_SF_ConvertExistingLead -->
+    </classes>
+  </test> <!-- Lendistry CRG profit Module_2(failed) -->
+  <test thread-count="4" parallel="tests" name="Lendistry NPO Module_1(failed)">
+    <classes>
+      <class name="CRGNonProfit.TC003_NPO_SF_EditLead">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- CRGNonProfit.TC003_NPO_SF_EditLead -->
+    </classes>
+  </test> <!-- Lendistry NPO Module_1(failed) -->
+  <test thread-count="4" parallel="tests" name="Lendistry CRG profit Module_1(failed)">
+    <classes>
+      <class name="CRGForProfit.TC008_UW_BankStmtSummary">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- CRGForProfit.TC008_UW_BankStmtSummary -->
+    </classes>
+  </test> <!-- Lendistry CRG profit Module_1(failed) -->
+  <test thread-count="4" parallel="tests" name="Lendistry NYR Module_1(failed)">
+    <classes>
+      <class name="LendistryNYR.TC008_NYR_UW_BankStmtSummary">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- LendistryNYR.TC008_NYR_UW_BankStmtSummary -->
+      <class name="LendistryNYR.TC007_NYR_LinkToBank">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- LendistryNYR.TC007_NYR_LinkToBank -->
+    </classes>
+  </test> <!-- Lendistry NYR Module_1(failed) -->
+  <test thread-count="4" parallel="tests" name="Lendistry NYR Module_2(failed)">
+    <classes>
+      <class name="LendistryNYR.TC014_NYR_Portal_ComponentSuit">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- LendistryNYR.TC014_NYR_Portal_ComponentSuit -->
+      <class name="LendistryNYR.TC013_NYR_SF_ConvertExistingLead">
+        <methods>
+          <include name="reportCleanUp"/>
+          <include name="intit"/>
+          <include name="initTest"/>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- LendistryNYR.TC013_NYR_SF_ConvertExistingLead -->
+    </classes>
+  </test> <!-- Lendistry NYR Module_2(failed) -->
+</suite> <!-- Failed suite [Lendistry Scenarios] -->

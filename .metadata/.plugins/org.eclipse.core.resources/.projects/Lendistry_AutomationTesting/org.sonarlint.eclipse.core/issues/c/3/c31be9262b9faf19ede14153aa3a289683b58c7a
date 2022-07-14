@@ -1,0 +1,72 @@
+
+‹
+java:S1104Z"RMake COUNTx a static final constant or non-public and provide accessors if needed.(¹•‰şÿÿÿÿ8øµ«ûš0H¡ŒRMINORZ
+CODE_SMELL
+
+java:S1149€"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ÜÍşìüÿÿÿÿ8ƒÄ”àŸ0H¦ŒRMAJORZ
+CODE_SMELL
+‰
+java:S1104\"PMake bool a static final constant or non-public and provide accessors if needed.(Æ´³™şÿÿÿÿ8øµ«ûš0H—ŒRMINORZ
+CODE_SMELL
+…	java:S116K"TRename this field "ObjectKey" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉãÛÑşÿÿÿÿH‘ŒRMINORZ
+CODE_SMELL
+ˆ	java:S116W"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹³³+8’Ö¥ùš0H™ŒRMINORZ
+CODE_SMELL
+u	java:S125„"<This block of commented-out lines of code should be removed.(œŸ›øÿÿÿÿ8„áÙŸ0H¨ŒRMAJORZ
+CODE_SMELL
+Œ
+java:S1104I"SMake envProp a static final constant or non-public and provide accessors if needed.(ôÛ²Ãùÿÿÿÿ8øµ«ûš0H¬ŒRMINORZ
+CODE_SMELL
+‹
+java:S1104O"RMake driver a static final constant or non-public and provide accessors if needed.(ÔèË©úÿÿÿÿ8«ËŠûš0HŒRMINORZ
+CODE_SMELL
+Š
+java:S1104W"WMake Description a static final constant or non-public and provide accessors if needed.(¹³³+8øµ«ûš0H•ŒRMINORZ
+CODE_SMELL
+S
+java:S1170["!Make this final field static too.(ØÄ˜ûşÿÿÿÿH£ŒRMINORZ
+CODE_SMELL
+
+java:S1149N"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ÌïÂ«ÿÿÿÿÿ8ˆº¥0HªŒRMAJORZ
+CODE_SMELL
+‹	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸ñµ¨ûÿÿÿÿHŒRMINORZ
+CODE_SMELL
+Œ
+java:S1104X"SMake numeric a static final constant or non-public and provide accessors if needed.(ŒÌ·…ıÿÿÿÿ8øµ«ûš0H¥ŒRMINORZ
+CODE_SMELL
+
+java:S1104M"YMake proceedOnFail a static final constant or non-public and provide accessors if needed.(†ëÓ8øµ«ûš0H–ŒRMINORZ
+CODE_SMELL
+
+java:S1319€"cThe type of "data" should be an interface such as "Map" rather than the implementation "Hashtable".(ÜÍşìüÿÿÿÿ8ƒÄ”àŸ0HšŒRMINORZ
+CODE_SMELL
+Š
+java:S1104U"VMake softAssert a static final constant or non-public and provide accessors if needed.(Å”§Â8øµ«ûš0HŒRMINORZ
+CODE_SMELL
+
+java:S1104K"UMake ObjectKey a static final constant or non-public and provide accessors if needed.(ÉãÛÑşÿÿÿÿ8øµ«ûš0H§ŒRMINORZ
+CODE_SMELL
+œ
+java:S1319N"cThe type of "data" should be an interface such as "Map" rather than the implementation "Hashtable".(ÌïÂ«ÿÿÿÿÿ8“ñï¹Ÿ0H’ŒRMINORZ
+CODE_SMELL
+‰
+java:S1104N"PMake data a static final constant or non-public and provide accessors if needed.(ÌïÂ«ÿÿÿÿÿ8øµ«ûš0H«ŒRMINORZ
+CODE_SMELL
+
+java:S1104]"UMake popUpText a static final constant or non-public and provide accessors if needed.(îü¡äşÿÿÿÿ8øµ«ûš0H¢ŒRMINORZ
+CODE_SMELL
+Œ
+java:S1104L"SMake dataKey a static final constant or non-public and provide accessors if needed.(à‘šüûÿÿÿÿ8øµ«ûš0H©ŒRMINORZ
+CODE_SMELL
+‰	java:S116Z"QRename this field "COUNTx" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹•‰şÿÿÿÿ8ºøŸóš0HŒRMINORZ
+CODE_SMELL
+‰
+java:S1104T"PMake test a static final constant or non-public and provide accessors if needed.(°ùîúÿÿÿÿ8†ˆ‹ûš0H˜ŒRMINORZ
+CODE_SMELL
+	java:S116["PRename this field "RETRY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÄ˜ûşÿÿÿÿH ŒRMINORZ
+CODE_SMELL
+…	java:S117à"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß½‘˜8ƒÄ”àŸ0HŸŒRMINORZ
+CODE_SMELL
+‰
+java:S1104J"PMake prop a static final constant or non-public and provide accessors if needed.(’Ú®ãúÿÿÿÿ8øµ«ûš0H¤ŒRMINORZ
+CODE_SMELL

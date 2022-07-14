@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lendistry Scenarios" parallel="tests"
+	thread-count="4">
+
+<!-- 	<listeners>
+		<listener
+			class-name="com.Automation.reports.AnnotationTransformer" />
+	</listeners>
+ -->
+	<!-- parallel="classes" thread-count="3" -->
+
+	<test name="Lendistry CRG profit Module_1" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class name="CRGForProfit.TC001_CRG_ForProfit" />
+			<class name="CRGForProfit.TC002_SF_LeadVerification" />
+			<class name="CRGForProfit.TC003_SF_EditLead" />
+			<class name="CRGForProfit.TC004_SF_convertLeadToOpp" />
+			<class name="CRGForProfit.TC005_SF_EditUWToOpps" />
+			<class name="CRGForProfit.TC006_SF_ODSSVerification" />
+			<class name="CRGForProfit.TC007_CRG_LinkToBank" />
+			<class name="CRGForProfit.TC008_UW_BankStmtSummary" />
+		</classes>
+	</test>
+	<test name="Lendistry CRG profit Module_2" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class name="CRGForProfit.TC009_CRG_ForProfitIncomplete" />
+			<class name="CRGForProfit.TC010_CRG_NetworkSelection" />
+			<class name="CRGForProfit.TC011_CRG_DocUpload" />
+			<class name="CRGForProfit.TC012_UW_DocUploadToCloseDoc" />
+			<class name="CRGForProfit.TC013_SF_ConvertExistingLead" />
+		</classes>
+	</test>
+
+
+	<test name="Lendistry CRG NPO Module_1" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class name="CRGNonProfit.TC001_NPO_CRG_NonProfit" />
+			<class name="CRGNonProfit.TC002_NPO_SF_LeadVerification" />
+			<class name="CRGNonProfit.TC003_NPO_SF_EditLead" />
+			<class name="CRGNonProfit.TC004_NPO_SF_convertLeadToOpp" />
+			<class name="CRGNonProfit.TC005_NPO_SF_EditUWToOpps" />
+			<class name="CRGNonProfit.TC006_NPO_SF_ODSSVerification" />
+			<class name="CRGNonProfit.TC007_NPO_CRG_LinkToBank" />
+			<class name="CRGNonProfit.TC008_NPO_UW_BankStmtSummary" />
+		</classes>
+	</test>
+	<test name="Lendistry CRG NPO Module_2" preserve-order="true"
+		enabled="true">
+		<classes>
+		<!-- 	<class name="CRGNonProfit.TC009_NPO_CRG_NonProfitIncomplete" />
+			<class name="CRGNonProfit.TC010_NPO_CRG_NetworkSelection" />
+			<class name="CRGNonProfit.TC011_NPO_CRG_DocUpload" /> -->
+			<class name="CRGNonProfit.TC012_NPO_UW_DocUploadToCloseDoc" />
+			<class name="CRGNonProfit.TC013_NPO_SF_ConvertExistingLead" />
+		</classes>
+	</test>
+
+	<test name="Lendistry CRG ACNPO Module_1" preserve-order="true"
+		enabled="false">
+		<classes>
+			<class name="CRGAcNonProfit.TC001_ACNPO_CRG_NonProfit" />
+			<class name="CRGAcNonProfit.TC002_ACNPO_SF_LeadVerification" />
+			<class name="CRGAcNonProfit.TC003_ACNPO_SF_EditLead" />
+			<class name="CRGAcNonProfit.TC004_ACNPO_SF_convertLeadToOpp" />
+			<class name="CRGAcNonProfit.TC005_ACNPO_SF_EditUWToOpps" />
+			<class name="CRGAcNonProfit.TC006_ACNPO_SF_ODSSVerification" />
+			<class name="CRGAcNonProfit.TC007_ACNPO_CRG_LinkToBank" />
+			<class name="CRGAcNonProfit.TC008_ACNPO_UW_BankStmtSummary" />
+		</classes>
+	</test>
+
+	<test name="Lendistry CRG ACNPO Module_2" preserve-order="true"
+		enabled="true">
+		<classes>
+			<!-- <class
+				name="CRGAcNonProfit.TC009_ACNPO_CRG_NonProfitIncomplete" />
+			<class name="CRGAcNonProfit.TC010_ACNPO_CRG_NetworkSelection" />
+			<class name="CRGAcNonProfit.TC011_ACNPO_CRG_DocUpload" /> -->
+			<class name="CRGAcNonProfit.TC012_ACNPO_UW_DocUploadToCloseDoc" />
+			<class name="CRGAcNonProfit.TC013_ACNPO_SF_ConvertExistingLead" />
+
+		</classes>
+	</test>
+
+	<test name="Lendistry test NYR Module_1" preserve-order="true"
+		enabled="false" >
+		<classes>
+			<class name="LendistryNYR.TC001_NYRPortal" />
+			<class name="LendistryNYR.TC002_NYR_SF_LeadVerification" />
+			<class name="LendistryNYR.TC003_NYR_SF_EditLead" />
+			<class name="LendistryNYR.TC004_NYR_SF_convertLeadToOpp" />
+			<class name="LendistryNYR.TC005_NYR_SF_EditUWToOpps" />
+			<class name="LendistryNYR.TC006_NYR_SF_ODSSVerification" />
+			<class name="LendistryNYR.TC007_NYR_LinkToBank" />
+			<class name="LendistryNYR.TC008_NYR_UW_BankStmtSummary" />
+		</classes>
+	</test>
+
+	<test name="Lendistry test NYR Module_2" preserve-order="true"
+		enabled="true">
+		<classes>
+			<!-- <class name="LendistryNYR.TC009_NYR_IncompletePortal" />
+			<class name="LendistryNYR.TC010_NYR_NetworkSelection" />
+			<class name="LendistryNYR.TC011_NYR_Portal_DocUpload" /> -->
+			<class name="LendistryNYR.TC012_NYR_UW_DocUploadToCloseDoc" />
+			<class name="LendistryNYR.TC013_NYR_SF_ConvertExistingLead" />
+			<class name="LendistryNYR.TC014_NYR_Portal_ComponentSuit" />
+		</classes>
+	</test>
+
+	<!-- <class name="ComponetTestSuit.TC01_CRGForProfits_BasicDetails" /> <class 
+		name="ComponetTestSuit.TC02_CRGForProfits_OwnerDetails" /> <class name="ComponetTestSuit.TC03_CRGForProfits_BusinessInfo" 
+		/> <class name="ComponetTestSuit.TC04_E2ECRGDropDown" /> -->
+
+</suite> 
+

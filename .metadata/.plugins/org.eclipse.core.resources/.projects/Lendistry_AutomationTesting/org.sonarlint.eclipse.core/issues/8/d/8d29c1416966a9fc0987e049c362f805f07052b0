@@ -1,0 +1,17 @@
+
+o	java:S125"<This block of commented-out lines of code should be removed.(Î¥ï¿8µõ…ğ0HÃÅRMAJORZ
+CODE_SMELL
+d
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8òşæï0H ÄRMINORZ
+CODE_SMELL
+d
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8òşæï0H¦ÄRMINORZ
+CODE_SMELL
+f
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8òşæï0H¢ÄRMINORZ
+CODE_SMELL
+k
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8òşæï0H¤ÄRMINORZ
+CODE_SMELL
+†	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕĞ›ÜH¤ÃRMINORZ
+CODE_SMELL
